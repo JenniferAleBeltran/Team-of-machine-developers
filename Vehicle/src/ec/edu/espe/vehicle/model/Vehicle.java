@@ -13,5 +13,34 @@ import java.util.ArrayList;
  */
 public class Vehicle {
     private String price;
-    private final ArrayList<Accessory> accessory = new ArrayList<>();
+    private ArrayList<Accessory> accessory = new ArrayList<>();
+
+    /**
+     * @return the price
+     */
+    public String getPrice() {
+        return price;
+    }
+
+    /**
+     * @param price the price to set
+     */
+    public void setPrice(String price) {
+        this.price = price;
+    }
+
+    /**
+     * @return the accessory
+     */
+    public ArrayList<Accessory> getAccessory() {
+        return accessory;
+    }
+
+    /**
+     * @param accessory the accessory to set
+     */
+    public void setAccessory(ArrayList<Accessory> accessory) {
+        this.accessory = accessory;
+    }
+    
 }

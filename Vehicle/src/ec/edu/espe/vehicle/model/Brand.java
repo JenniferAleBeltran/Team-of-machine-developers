@@ -13,4 +13,47 @@ public class Brand {
     private int age;
     private int type;
     private String modelofvehicle;
+
+    /**
+     * @return the age
+     */
+    public int getAge() {
+        return age;
+    }
+
+    /**
+     * @param age the age to set
+     */
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    /**
+     * @return the type
+     */
+    public int getType() {
+        return type;
+    }
+
+    /**
+     * @param type the type to set
+     */
+    public void setType(int type) {
+        this.type = type;
+    }
+
+    /**
+     * @return the modelofvehicle
+     */
+    public String getModelofvehicle() {
+        return modelofvehicle;
+    }
+
+    /**
+     * @param modelofvehicle the modelofvehicle to set
+     */
+    public void setModelofvehicle(String modelofvehicle) {
+        this.modelofvehicle = modelofvehicle;
+    }
+    
 }

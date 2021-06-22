@@ -13,4 +13,47 @@ public class Client {
     private String esconomicstatus;
     private String name;
     private String address;
+
+    /**
+     * @return the esconomicstatus
+     */
+    public String getEsconomicstatus() {
+        return esconomicstatus;
+    }
+
+    /**
+     * @param esconomicstatus the esconomicstatus to set
+     */
+    public void setEsconomicstatus(String esconomicstatus) {
+        this.esconomicstatus = esconomicstatus;
+    }
+
+    /**
+     * @return the name
+     */
+    public String getName() {
+        return name;
+    }
+
+    /**
+     * @param name the name to set
+     */
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    /**
+     * @return the address
+     */
+    public String getAddress() {
+        return address;
+    }
+
+    /**
+     * @param address the address to set
+     */
+    public void setAddress(String address) {
+        this.address = address;
+    }
+    
 }
