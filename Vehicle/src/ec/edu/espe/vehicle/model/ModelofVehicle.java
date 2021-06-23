@@ -17,6 +17,23 @@ public class ModelofVehicle {
     private String shape;
     private ArrayList<Brand> brand = new ArrayList<>();
 
+   //Constructor, toString(), 
+    
+   public ModelOfVehicle(String name, String color, String shape) {
+        this.name = name;
+        this.color = color;
+        this.shape = shape;
+    }
+
+    public ModelOfVehicle() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public String toString() {
+        return "ModelOfVehicle{" + "name=" + getName() + ", color=" + getColor() + ", shape=" + getShape() + ", brand=" + getBrand() + '}';
+    }
+
     /**
      * @return the name
      */
@@ -72,5 +89,7 @@ public class ModelofVehicle {
     public void setBrand(ArrayList<Brand> brand) {
         this.brand = brand;
     }
+
+    
     
 }
