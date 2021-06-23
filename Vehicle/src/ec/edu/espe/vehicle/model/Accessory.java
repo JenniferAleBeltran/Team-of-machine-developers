@@ -14,6 +14,21 @@ public class Accessory {
     private int mirror; 
     private int airconditioning;
 
+public Accessory(int seat, int mirror, int airconditioning) {
+        this.seat = seat;
+        this.mirror = mirror;
+        this.airconditioning = airconditioning;
+    }
+
+    public Accessory() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public String toString() {
+        return "Accessory{" + "seat=" + getSeat() + ", mirror=" + getMirror() + ", airconditioning=" + getAirconditioning() + '}';
+    }
+
     /**
      * @return the seat
      */
@@ -54,6 +69,8 @@ public class Accessory {
      */
     public void setAirconditioning(int airconditioning) {
         this.airconditioning = airconditioning;
-    }
+    }   
     
 }
+
+
