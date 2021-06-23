@@ -17,7 +17,7 @@ public class ModelofVehicle {
     private String shape;
     private ArrayList<Brand> brand = new ArrayList<>();
 
-   //Constructor, toString(), 
+//Construtor, toString(), Getter and Setter.
     
    public ModelOfVehicle(String name, String color, String shape) {
         this.name = name;
