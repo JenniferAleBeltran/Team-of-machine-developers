@@ -13,6 +13,23 @@ public class Client {
     private String esconomicstatus;
     private String name;
     private String address;
+    
+    //construtor, toString(), Getter and Setter.
+
+    public Client(String esconomicstatus, String name, String address) {
+        this.esconomicstatus = esconomicstatus;
+        this.name = name;
+        this.address = address;
+    }
+
+    public Client() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public String toString() {
+        return "Client{" + "esconomicstatus=" + getEsconomicstatus() + ", name=" + getName() + ", address=" + getAddress() + '}';
+    }
 
     /**
      * @return the esconomicstatus
@@ -55,5 +72,6 @@ public class Client {
     public void setAddress(String address) {
         this.address = address;
     }
+
     
 }
