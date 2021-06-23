@@ -18,5 +18,14 @@ public class System {
       Accessory accessory= new Accessory();
       Brand brand= new Brand();
       Type type= new Type();
+      
+      vehicle.setPrice("2.000");
+      client.setEsconomicstatus("middle class ");
+      modelofvehicle.setName("Chevrolet");
+      accessory.setSeat(7);
+      brand.setAge(2004);
+      type.setT("t");
+      
+      
     }
 }
