@@ -13,7 +13,9 @@ public class Brand {
     private int age;
     private int type;
     private String modelofvehicle;
-
+    
+//construtor, toString(), Getter and Setter
+    
     public Brand(int age, int type, String modelofvehicle) {
         this.age = age;
         this.type = type;
