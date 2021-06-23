@@ -14,6 +14,21 @@ public class Brand {
     private int type;
     private String modelofvehicle;
 
+    public Brand(int age, int type, String modelofvehicle) {
+        this.age = age;
+        this.type = type;
+        this.modelofvehicle = modelofvehicle;
+    }
+
+    public Brand() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public String toString() {
+        return "Brand{" + "age=" + getAge() + ", type=" + getType() + ", modelofvehicle=" + getModelofvehicle() + '}';
+    }
+
     /**
      * @return the age
      */
@@ -55,5 +70,7 @@ public class Brand {
     public void setModelofvehicle(String modelofvehicle) {
         this.modelofvehicle = modelofvehicle;
     }
+
+    
     
 }
