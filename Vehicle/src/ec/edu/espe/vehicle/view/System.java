@@ -4,7 +4,12 @@
  * and open the template in the editor.
  */
 package ec.edu.espe.vehicle.view;
-import ec.edu.espe.vehicle.model.*;
+import ec.edu.espe.vehicle.model.Accessory;
+import ec.edu.espe.vehicle.model.Brand;
+import ec.edu.espe.vehicle.model.Client;
+import ec.edu.espe.vehicle.model.ModelOfVehicle;
+import ec.edu.espe.vehicle.model.Type;
+import ec.edu.espe.vehicle.model.Vehicle;
 /**
  *
  * @author < Jennifer Beltran Team of machine Developers>
