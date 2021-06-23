@@ -14,7 +14,9 @@ public class Accessory {
     private int mirror; 
     private int airconditioning;
 
-public Accessory(int seat, int mirror, int airconditioning) {
+//construtor, toString(), Getter and Setter.
+    
+    public Accessory(int seat, int mirror, int airconditioning) {
         this.seat = seat;
         this.mirror = mirror;
         this.airconditioning = airconditioning;
