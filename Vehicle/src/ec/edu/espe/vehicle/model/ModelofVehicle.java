@@ -19,14 +19,10 @@ public class ModelofVehicle {
 
 //Construtor, toString(), Getter and Setter.
     
-   public ModelOfVehicle(String name, String color, String shape) {
+    public ModelofVehicle(String name, String color, String shape) {
         this.name = name;
         this.color = color;
         this.shape = shape;
-    }
-
-    public ModelOfVehicle() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override

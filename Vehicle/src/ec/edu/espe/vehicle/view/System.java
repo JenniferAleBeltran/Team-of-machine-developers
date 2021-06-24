@@ -7,7 +7,7 @@ package ec.edu.espe.vehicle.view;
 import ec.edu.espe.vehicle.model.Accessory;
 import ec.edu.espe.vehicle.model.Brand;
 import ec.edu.espe.vehicle.model.Client;
-import ec.edu.espe.vehicle.model.ModelOfVehicle;
+import ec.edu.espe.vehicle.model.ModelofVehicle;
 import ec.edu.espe.vehicle.model.Type;
 import ec.edu.espe.vehicle.model.Vehicle;
 /**
@@ -19,7 +19,8 @@ public class System {
         
       Vehicle vehicle= new Vehicle();
       Client client= new Client();
-      ModelofVehicle modelofvehicle= new ModelofVehicle();
+
+      ModelofVehicle modelofvehicle= new ModelofVehicle("Toyota", "black", "squard");
       Accessory accessory= new Accessory();
       Brand brand= new Brand();
       Type type= new Type();
