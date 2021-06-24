@@ -13,6 +13,7 @@ import ec.edu.espe.vehicle.model.Type;
 import ec.edu.espe.vehicle.model.Vehicle;
 
 import ec.edu.espe.vehicle.model.*;
+import java.util.Scanner;
 
 
 /**
@@ -28,7 +29,7 @@ public class SystemVehicle {
       ModelofVehicle modelofvehicle= new ModelofVehicle("Toyota", "black", "squard");
       Accessory accessory= new Accessory(5, 4, 1);
       Brand brand= new Brand(25, 4, "Toyota");
-      Type type= new Type("vehicle");
+      Type type= new Type("Vehicle");
       
       vehicle.setPrice("2.000");
       client.setEsconomicstatus("middle class ");
@@ -36,6 +37,8 @@ public class SystemVehicle {
       accessory.setSeat(7);
       brand.setAge(2004);
       type.setT("t");
+      Scanner read = new Scanner(System.in);
+        int option;
       
       System.out.println("vehicle -> " + vehicle);
       System.out.println("client -> " + client);
@@ -43,8 +46,10 @@ public class SystemVehicle {
       System.out.println("accessory -> " + accessory);
       System.out.println("brand -> " + brand);
       System.out.println("type -> " + type);
-      
-      
-      
+            System.out.println("Welcome to the dealership");
+            System.out.println("Vehicles options:");
+            System.out.println("1.- New Vehicle");
+            System.out.println("2.- Used Vehicle");
+            option= read.nextInt();
     }
 }
