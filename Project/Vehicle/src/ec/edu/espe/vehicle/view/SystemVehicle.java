@@ -39,17 +39,29 @@ public class SystemVehicle {
       type.setT("t");
       Scanner read = new Scanner(System.in);
         int option;
-      
+        int i=0;
+        
       System.out.println("vehicle -> " + vehicle);
       System.out.println("client -> " + client);
       System.out.println("modelofvehicle -> " + modelofvehicle);
       System.out.println("accessory -> " + accessory);
       System.out.println("brand -> " + brand);
       System.out.println("type -> " + type);
-            System.out.println("Welcome to the dealership");
+      
+        System.out.println("Welcome to the dealership");
             System.out.println("Vehicles options:");
             System.out.println("1.- New Vehicle");
             System.out.println("2.- Used Vehicle");
             option= read.nextInt();
+            
+            switch(option){
+                case 1:
+                    System.out.println("Disponiblidad economica");
+                    if(i<=1900){
+                        System.out.println("Vaya a carros usados");
+                    } else {
+                        System.out.println("Vaya a carros nuevos");
+                    }
+            }
     }
 }
