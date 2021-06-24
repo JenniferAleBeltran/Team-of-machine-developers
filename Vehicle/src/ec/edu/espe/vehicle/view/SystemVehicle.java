@@ -4,17 +4,17 @@
  * and open the template in the editor.
  */
 package ec.edu.espe.vehicle.view;
-<<<<<<< HEAD:Vehicle/src/ec/edu/espe/vehicle/view/System.java
+
 import ec.edu.espe.vehicle.model.Accessory;
 import ec.edu.espe.vehicle.model.Brand;
 import ec.edu.espe.vehicle.model.Client;
 import ec.edu.espe.vehicle.model.ModelofVehicle;
 import ec.edu.espe.vehicle.model.Type;
 import ec.edu.espe.vehicle.model.Vehicle;
-=======
+
 import ec.edu.espe.vehicle.model.*;
 
->>>>>>> a0bb17feb4185c42de359bc1977f7a065b574ab0:Vehicle/src/ec/edu/espe/vehicle/view/SystemVehicle.java
+
 /**
  *
  * @author < Jennifer Beltran Team of machine Developers>
@@ -22,13 +22,13 @@ import ec.edu.espe.vehicle.model.*;
 public class SystemVehicle {
         public static void main(String[] args  ){
         
-      Vehicle vehicle= new Vehicle();
-      Client client= new Client();
+      Vehicle vehicle= new Vehicle("34000");
+      Client client= new Client("good", "Jennifer", "Quitumbe");
 
       ModelofVehicle modelofvehicle= new ModelofVehicle("Toyota", "black", "squard");
-      Accessory accessory= new Accessory();
-      Brand brand= new Brand();
-      Type type= new Type();
+      Accessory accessory= new Accessory(5, 4, 1);
+      Brand brand= new Brand(25, 4, "Toyota");
+      Type type= new Type("vehicle");
       
       vehicle.setPrice("2.000");
       client.setEsconomicstatus("middle class ");
@@ -43,5 +43,8 @@ public class SystemVehicle {
       System.out.println("accessory -> " + accessory);
       System.out.println("brand -> " + brand);
       System.out.println("type -> " + type);
+      
+      
+      
     }
 }

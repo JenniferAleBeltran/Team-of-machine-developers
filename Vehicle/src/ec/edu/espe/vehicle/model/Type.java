@@ -18,10 +18,6 @@ public class Type {
         this.t = t;
     }
 
-    public Type() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
     @Override
     public String toString() {
         return "Type{" + "t=" + getT() + '}';
