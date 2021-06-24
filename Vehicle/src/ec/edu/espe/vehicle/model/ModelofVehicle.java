@@ -19,12 +19,23 @@ public class ModelofVehicle {
 
 //Construtor, toString(), Getter and Setter.
     
+<<<<<<< HEAD
     public ModelofVehicle(String name, String color, String shape) {
+=======
+   public ModelofVehicle(String name, String color, String shape) {
+>>>>>>> a0bb17feb4185c42de359bc1977f7a065b574ab0
         this.name = name;
         this.color = color;
         this.shape = shape;
     }
 
+<<<<<<< HEAD
+=======
+    public ModelofVehicle() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+>>>>>>> a0bb17feb4185c42de359bc1977f7a065b574ab0
     @Override
     public String toString() {
         return "ModelOfVehicle{" + "name=" + getName() + ", color=" + getColor() + ", shape=" + getShape() + ", brand=" + getBrand() + '}';

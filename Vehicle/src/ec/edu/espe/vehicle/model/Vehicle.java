@@ -14,19 +14,15 @@ import java.util.ArrayList;
 public class Vehicle {
     private String price;
     private ArrayList<Accessory> accessory = new ArrayList<>();
-    
-//construtor, toString(), Getter and Setter.
-  public Vehicle(String price) {
-        this.price = price;
-    }
 
-    public Vehicle() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    
+    public Vehicle(String price) {
+        this.price = price;
     }
 
     @Override
     public String toString() {
-        return "Vehicle{" + "price=" + getPrice() + ", accessory=" + getAccessory() + '}';
+        return "Vehicle{" + "price=" + price + ", accessory=" + accessory + '}';
     }
 
     /**
@@ -57,6 +53,8 @@ public class Vehicle {
         this.accessory = accessory;
     }
 
+ 
     
-    
+
+   
 }
