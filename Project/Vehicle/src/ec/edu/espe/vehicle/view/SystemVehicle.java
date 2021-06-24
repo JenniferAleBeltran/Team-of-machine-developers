@@ -39,7 +39,6 @@ public class SystemVehicle {
       type.setT("t");
       Scanner read = new Scanner(System.in);
         int option;
-        int i=0;
         
       System.out.println("vehicle -> " + vehicle);
       System.out.println("client -> " + client);
@@ -49,19 +48,22 @@ public class SystemVehicle {
       System.out.println("type -> " + type);
       
         System.out.println("Welcome to the dealership");
-            System.out.println("Vehicles options:");
-            System.out.println("1.- New Vehicle");
-            System.out.println("2.- Used Vehicle");
+            System.out.println("Enter the money you have to purchase the vehicle:");
             option= read.nextInt();
             
+            System.out.println("You want a new car or a used car?");
             switch(option){
                 case 1:
-                    System.out.println("Disponiblidad economica");
-                    if(i<=1900){
-                        System.out.println("Vaya a carros usados");
+                    System.out.println("Economic availability");
+                    {
+                        System.out.println("Go to used cars");
                     } else {
-                        System.out.println("Vaya a carros nuevos");
+                        System.out.println("Go to new cars");
                     }
+                    
+                case 2: 
+                    System.out.println("");
             }
+            
     }
 }
