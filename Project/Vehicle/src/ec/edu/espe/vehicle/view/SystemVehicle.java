@@ -37,6 +37,8 @@ public class SystemVehicle {
       accessory.setSeat(7);
       brand.setAge(2004);
       type.setT("t");
+      float money;
+      String price;
       Scanner read = new Scanner(System.in);
         int option;
         
@@ -49,21 +51,16 @@ public class SystemVehicle {
       
         System.out.println("Welcome to the dealership");
             System.out.println("Enter the money you have to purchase the vehicle:");
-            option= read.nextInt();
-            
+            money= read.nextFloat();
+            if(money<=10000 ){
+            System.out.println("you can buy a used vehicle");
+            }
+            else{
+            System.out.println("you can buy a new vehicle");  
+            } 
             System.out.println("You want a new car or a used car?");
-            switch(option){
-                case 1:
-                    System.out.println("Economic availability");
-                    {
-                        System.out.println("Go to used cars");
-                    } else {
-                        System.out.println("Go to new cars");
-                    }
-                    
-                case 2: 
-                    System.out.println("");
+            
             }
             
     }
-}
+
