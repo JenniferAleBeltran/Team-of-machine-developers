@@ -1,10 +1,9 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package ec.edu.espe.vehicle.view;
+//This project is created to help the client to quote a vehicle in a dealership,
+//according to his budget, it helps him choose between several options of brands and models,
+//so he will choose the one that best suits him.
 
+
+package ec.edu.espe.vehicle.view;
 import ec.edu.espe.vehicle.model.Accessory;
 import ec.edu.espe.vehicle.model.Client;
 import ec.edu.espe.vehicle.model.ModelofVehicle;
