@@ -9,7 +9,7 @@ import ec.edu.espe.vehicle.model.Client;
 import ec.edu.espe.vehicle.model.ModelofVehicle;
 import ec.edu.espe.vehicle.model.Vehicle;
 
-import java.util.Scanner;
+import java.util.Scanner; // Falta library json
 
 /**
  *
@@ -33,7 +33,7 @@ public class SystemVehicle {
         System.out.println("Welcome to the dealership");
         System.out.println("Enter the money you have to purchase the vehicle:");
         money = read.nextFloat();
-        if (money <= 13000) {
+        if (money <= 13000) { // Este if no condiciona nada 
             System.out.println("At the moment we do not have vehicles according to your budget, but you can view the new vehicles that we have.");
         } else {
             System.out.println("you can buy a new vehicle");
@@ -105,7 +105,7 @@ public class SystemVehicle {
                         System.out.println("Its price is: $16000");
                         break;
                     default:
-                        System.out.println("WARNING!!!!");
+                        System.out.println("WARNING!!!!"); 
                         break;
                        
             }break;
@@ -285,6 +285,6 @@ public class SystemVehicle {
                 System.out.println("WARNING!!!!");
                 break;
         }
-        }while(option !=5);
+        }while(option !=5);// Recomendacion demasiados cases tratar de optimizar 
         }
-    }
+    } // Falta el codigo json
