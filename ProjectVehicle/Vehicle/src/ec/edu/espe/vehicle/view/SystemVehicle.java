@@ -29,7 +29,8 @@ public class SystemVehicle {
         int option3;
         int option4;
         int option5;
-
+        
+        do{
         System.out.println("Welcome to the dealership");
         System.out.println("Enter the money you have to purchase the vehicle:");
         money = read.nextFloat();
@@ -44,7 +45,7 @@ public class SystemVehicle {
         System.out.println("2.-Toyota");
         System.out.println("3.-KIA");
         System.out.println("4.-Hyundai");
-        brand = read.next();
+        System.out.println("5.-Exit");
         option = read.nextInt();
 
         switch (option) {
@@ -278,10 +279,11 @@ public class SystemVehicle {
                         System.out.println("WARNING!!!!");
                         break;
             }break;
-
+            
             default:
                 System.out.println("WARNING!!!!");
                 break;
         }
+        }while(option !=5);
+        }
     }
-}
