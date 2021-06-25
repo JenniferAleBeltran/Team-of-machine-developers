@@ -41,6 +41,22 @@ public class SystemVehicle {
             System.out.println("3.-KIA");
             System.out.println("4.-Hyundai");
             brand=read.next();
+            option=read.nextInt();
+       
+            switch(option){    
+                
+            case 1:
+                System.out.println("");
+            case 2:
+                System.out.println("");
+            case 3:
+                System.out.println("");
+            case 4:
+                System.out.println("");
+            default: System.out.println("WARNING!!!!");
+        }
+                    
+                    
             System.out.println("What color do you want your vehicle?");
             System.out.println("1.-Red");
             System.out.println("2.-White");
