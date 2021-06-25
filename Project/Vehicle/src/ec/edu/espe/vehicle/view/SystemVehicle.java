@@ -26,6 +26,7 @@ public class SystemVehicle {
       Scanner read = new Scanner(System.in);
         int option;
         int option2; 
+        int option3;
         
         System.out.println("Welcome to the dealership");
             System.out.println("Enter the money you have to purchase the vehicle:");
@@ -89,7 +90,7 @@ public class SystemVehicle {
                   "   Audio and phone controls behind the wheel\n" +
                   "   ABS + EBD braking systems\n" +
                   "   Double front airbag");
-                  System.out.println("Its price is: $14.799"); 
+                  System.out.println("Its price is: $14799"); 
                               case 4:
                  System.out.println("The Chevrolet Sail version features:"); 
                  System.out.println("Slope start assistant\n" +
@@ -105,6 +106,53 @@ public class SystemVehicle {
                 System.out.println("2.-Yaris");
                 System.out.println("3.-Hilux");
                 System.out.println("4.-Fortuner");
+                option3=read.nextInt(); 
+             switch(option3){
+                 case 1:
+                 System.out.println("The Toyota Corolla version features:"); 
+                 System.out.println("Hybrid 1.8 L engine.\n" +
+                         "    Power of 122cv.\n" +
+                         "    170 Nm torque.\n" +
+                         "    CVT transmission.\n" +
+                         "    86 km / Gal consumption.");        
+                 System.out.println("Its price is: $30000"); 
+                 
+                            case 2:
+                 System.out.println("The Toyota Yaris version features:"); 
+                 System.out.println(" car body\n" +
+                         "doors 5.\n" +
+                         "squares5.\n" +
+                         "trunk286 l.\n" +
+                         "power125 hp.\n" +
+                         "consumption4.8 l / 100km");
+                 System.out.println("Its price is: $22000");
+                 
+                            case 3:
+                 System.out.println("The Toyota Hilux version features:"); 
+                 System.out.println("2,700cc engine\n" +
+                         "160 horsepower power\n" +
+                         "maximum torque of 241 Nm ");
+                 System.out.println("Its price is: $53000");
+                 
+                            case 4:
+                 System.out.println("The Toyota Fortuner version features:"); 
+                 System.out.println("2,700 cc engine" + 
+                         "4 cylinders in line" + 
+                         "16 valves" + 
+                         " DOHC and DUAL VVT-i technology" +
+                         " 163Hp power" +
+                         "torque of 245 Nm");
+                 System.out.println("Its price is: $56000");
+
+
+
+
+
+
+
+
+
+                
                 
             case 3:
                 System.out.println("Welcome to KIA");
@@ -126,10 +174,7 @@ public class SystemVehicle {
             
         }
           
-                
-              
-            }
-            }
+            
             
    
 
