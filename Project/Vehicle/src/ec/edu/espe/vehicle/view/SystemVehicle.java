@@ -27,6 +27,8 @@ public class SystemVehicle {
         int option;
         int option2; 
         int option3;
+        int option4;
+        int option5;
         
         System.out.println("Welcome to the dealership");
             System.out.println("Enter the money you have to purchase the vehicle:");
@@ -144,31 +146,115 @@ public class SystemVehicle {
                          "torque of 245 Nm");
                  System.out.println("Its price is: $56000");
 
-
-
-
-
-
-
-
-
-                
-                
             case 3:
                 System.out.println("Welcome to KIA");
                 System.out.println("What model do you want of vehicle?");
-                System.out.println("1.-Sportage R");
-                System.out.println("2.-Picanto");
-                System.out.println("3.-Rio");
-                System.out.println("4.-Cerato");
+                System.out.println("1.-Picanto");
+                System.out.println("2.-Sportage");
+                System.out.println("3.-Optima");
+                System.out.println("4.-Rio");
+                option4=read.nextInt(); 
+                switch(option4){
+                 case 1:
+                 System.out.println("Kia Picanto version features:"); 
+                 System.out.println("Gasoline Extra / Eco-country.\n" +
+                  "    1.0 / 1.2 engine.\n" +
+                  "    Maximum power 83hp.\n" +
+                  "    Vehicle consumption 65 km / g.\n" +
+                  "    10-year / 160 thousand km warranty.\n" +
+                  "    seven-inch touchscreen multimedia system\n" +
+                  "    It develops 84 horses and 122 Nm at 4,000 revolutions\n" +
+                  "    3.59 meters long, 1.59 meters wide and 1.48 meters high");
+                  System.out.println("Its price is: $13000");
+                    case 2:
+                 System.out.println("Kia Sportage version features:"); 
+                 System.out.println(" 2.4L 4-cylinder, 181 hp, 175 pound-feet of torque engine\n" +
+                  "    6-speed automatic transmission with Sportmatic®.\n" +
+                  "    17 \"alloy wheels\n" +
+                  "    Rear privacy glass\n" +
+                  "    Led daytime running lights\n" +
+                  "    Available all-wheel drive\n" +
+                  "    Dynamax ™ All-Wheel Drive (AWD) with Locking Center Differential");
+                  System.out.println("Its price is: $29000"); 
+                         case 3:
+                 System.out.println("Kia Optima version features:"); 
+                 System.out.println("4 cyl, 2.4 L, 185 hp engine\n" +
+                  "   16 \"alloy wheels \n" +
+                  "   Autonomous emergency braking and warning\n" +
+                  "   Cloth seat with CleanTex ™\n" +
+                  "   Air-conditioning\n" +
+                  "   8 \"touch screen with rear camera\n" +
+                  "   Lane Keeping and Lane Following Assist\n" +
+                  "   Dual Overhead Cam (DOHC), 16-valve\n" +
+                  "   Gasoline Direct Injection (GDI)\n" +
+                  "   6-speed automatic transmission");
+                  System.out.println("Its price is: $34000"); 
+                              case 4:
+                 System.out.println("Kia Rio version features:"); 
+                 System.out.println("1.6-liter, 4-cylinder in-line engine\n" +
+                  "   Air-conditioning\n" +
+                  "   Tilting steering wheel with mounted audio controls\n" +
+                  "   Heated power windows, locks and exterior mirrors\n" +
+                  "   horsepower 120hp\n" +
+                  "   6-way adjustable driver's seat");
+                  System.out.println("Its price is: $20000"); 
+             }  
                 
             case 4:
                 System.out.println("Welcome to Hyundai");
                 System.out.println("What model do you want of vehicle?");
-                System.out.println("1.- i-10");
-                System.out.println("2.- Elantra");
-                System.out.println("3.- Accent");
-                System.out.println("4.- Santa Fe");
+                System.out.println("1.-Santa Fe");
+                System.out.println("2.- i10");
+                System.out.println("3.- Tucson");
+                System.out.println("4.- IONIQ");
+                option5=read.nextInt(); 
+                switch(option5){
+                 case 1:
+                 System.out.println("Hyundai Santa FE version features:"); 
+                 System.out.println("BodySUV Large.\n" +
+                  "    doors 5.\n" +
+                  "    squares7.\n" +
+                  "    trunk547 l.\n" +
+                  "    power 150 - 202 hp.\n" +
+                  "    Consumption 5.6 - 9.3 l / 100km\n" +
+                  "    long, 1.89 meters wide and 1.68 meters high\n" +
+                  "    2.4 GDI with 184 horsepower and 241 Nm of torque");
+                  System.out.println("Its price is: $45000");
+                    case 2:
+                 System.out.println("Hyundai i10 version features:"); 
+                 System.out.println(" 1.0 MPi 3-cylinder with 67 hp and 96 Nm of torque\n" +
+                  "    Kind. Valves Power (HP / RPM)\n" +
+                  "    System. Front and rear. Hand brake." +
+                  "    Tires. Front steel hoops. Later.\n" +
+                  "    System. MDPS (Electric Motor Assisted)\n" +
+                  "    Kind. Speeds. Handbook.\n" +
+                  "    Third brake light. Roof antenna");
+                  System.out.println("Its price is: $15000"); 
+                         case 3:
+                 System.out.println("Hyundai Tucson version features:"); 
+                 System.out.println("SUV body\n" +
+                  "   \"Medium. \n" +
+                  "   doors 5.\n" +
+                  "   squares5.\n" +
+                  "   trunk546 l.\n" +
+                  "   power 115 - 180 hp.\n" +
+                  "   consumption6,1 l / 100km\n" +
+                  "   Conventional engines are made up of a 115 hp 1.6 diesel and a 150 hp 1.6 turbo petrol\n" +
+                  "   full support for Apple CarPlay and Android Auto\n" +
+                  "   48-volt micro-hybrids");
+                  System.out.println("Its price is: $40000"); 
+                              case 4:
+                 System.out.println("Hyundai IONIQ version features:"); 
+                 System.out.println("Consumption3.6 l / 100km\n" +
+                  "   power141 hp.\n" +
+                  "   Compact body.\n" +
+                  "   trunk563 l\n" +
+                  "   4,470 mm long, 1,820 mm wide and 1,450 mm high.\n" +
+                  "   141 hp, with a maximum torque of 265 Nm.");
+                  System.out.println("Its price is: $19000"); 
+             }  
+
+
                 
             default: System.out.println("WARNING!!!!");
             
