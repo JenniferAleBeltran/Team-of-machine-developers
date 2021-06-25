@@ -34,12 +34,12 @@ public class SystemVehicle {
         System.out.println("Welcome to the dealership");
         System.out.println("Enter the money you have to purchase the vehicle:");
         money = read.nextFloat();
-        if (money <= 10000) {
-            System.out.println("you can buy a used vehicle");
+        if (money <= 13000) {
+            System.out.println("At the moment we do not have vehicles according to your budget, but you can view the new vehicles that we have.");
         } else {
             System.out.println("you can buy a new vehicle");
         }
-
+            System.out.println("");
         System.out.println("What brand of vehicle do you want to buy?");
         System.out.println("1.-Chevrolet");
         System.out.println("2.-Toyota");
