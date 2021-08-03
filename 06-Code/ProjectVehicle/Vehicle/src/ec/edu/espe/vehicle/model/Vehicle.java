@@ -12,31 +12,96 @@ import java.util.ArrayList;
  * @author < Jennifer Beltran Team of machine Developers>
  */
 public class Vehicle {
-    private String price;
+    private String code ;
+    private String brand;
+    private String type;
+    private int price;    
+    private int model;
+    private int mileage;
     private ArrayList<Accessory> accessory = new ArrayList<>();
 
-    
-    public Vehicle(String price) {
-        this.price = price;
+    /**
+     * @return the code
+     */
+    public String getCode() {
+        return code;
     }
 
-    @Override
-    public String toString() {
-        return "Vehicle{" + "price=" + price + ", accessory=" + accessory + '}';
+    /**
+     * @param code the code to set
+     */
+    public void setCode(String code) {
+        this.code = code;
+    }
+
+    /**
+     * @return the brand
+     */
+    public String getBrand() {
+        return brand;
+    }
+
+    /**
+     * @param brand the brand to set
+     */
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
+
+    /**
+     * @return the type
+     */
+    public String getType() {
+        return type;
+    }
+
+    /**
+     * @param type the type to set
+     */
+    public void setType(String type) {
+        this.type = type;
     }
 
     /**
      * @return the price
      */
-    public String getPrice() {
+    public int getPrice() {
         return price;
     }
 
     /**
      * @param price the price to set
      */
-    public void setPrice(String price) {
+    public void setPrice(int price) {
         this.price = price;
+    }
+
+    /**
+     * @return the model
+     */
+    public int getModel() {
+        return model;
+    }
+
+    /**
+     * @param model the model to set
+     */
+    public void setModel(int model) {
+        this.model = model;
+    }
+
+    /**
+     * @return the mileage
+     */
+    public int getMileage() {
+        return mileage;
+    }
+
+    /**
+     * @param mileage the mileage to set
+     */
+    public void setMileage(int mileage) {
+        this.mileage = mileage;
     }
 
     /**
@@ -52,9 +117,6 @@ public class Vehicle {
     public void setAccessory(ArrayList<Accessory> accessory) {
         this.accessory = accessory;
     }
-
- 
-    
 
    
 }
