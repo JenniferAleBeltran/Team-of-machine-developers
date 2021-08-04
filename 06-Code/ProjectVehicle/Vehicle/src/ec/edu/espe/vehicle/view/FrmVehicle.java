@@ -7,7 +7,7 @@ package ec.edu.espe.vehicle.view;
 
 /**
  *
- * @author Geraldi Chasi Team of Machine ESPE-DCCD
+ * @author < Jennifer Beltran Team of machine Developers>
  */
 public class FrmVehicle extends javax.swing.JFrame {
 
