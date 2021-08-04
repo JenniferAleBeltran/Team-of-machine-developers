@@ -3,12 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ec.edu.espe.vehicle.controller;
+package utils;
 
 /**
  *
  * @author Vanessa Cayambe Team of machine ESPE-DCCO
  */
-public class Client {
+public interface VehicleDearleship {
+    
+    public void price(float amount);
+    public void speedUp(int amount); 
+    
     
 }
