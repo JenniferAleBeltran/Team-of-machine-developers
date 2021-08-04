@@ -45,7 +45,24 @@ public class SystemVehicle {
               System.out.println (">> Registrar vehicle: 1");
               System.out.println (">> Register vehicle sale: 2");
               System.out.println (">> Exit consessionary: 0");
+              
+              option = in.nextInt ();
+            
+            yes (option == 1) {
+                System.out.println ("\ n");
+                
+                String [] typeVehicle = {"Car", "Truck", "Motorcycle"};
+                
+                
+                System.out.println ("Enter the vehicle code:");
+                codeVehicle= reader.next ();
+                
+                System.out.println ("Enter the make of the vehicle:");
+                brandVehicle = reader.next ();
+        }
     }
+        
+
 }
     
 } 
