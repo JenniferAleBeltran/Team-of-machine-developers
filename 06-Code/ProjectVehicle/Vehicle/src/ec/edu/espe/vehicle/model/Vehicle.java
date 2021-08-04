@@ -20,6 +20,15 @@ public class Vehicle {
     private int mileage;
     private ArrayList<Accessory> accessory = new ArrayList<>();
 
+    public Vehicle(String code, String brand, String type, int price, int model, int mileage) {
+        this.code = code;
+        this.brand = brand;
+        this.type = type;
+        this.price = price;
+        this.model = model;
+        this.mileage = mileage;
+    }
+
     /**
      * @return the code
      */
