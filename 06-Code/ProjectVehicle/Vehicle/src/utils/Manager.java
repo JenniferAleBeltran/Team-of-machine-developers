@@ -9,7 +9,7 @@ package utils;
  *
  * @author Fernanda Cadena Team of Machine ESPE-DCCD
  */
-public class FileManager implements VehicleDearleship {
+public class Manager implements VehicleDearleship {
 
     @Override
     public String add() {
