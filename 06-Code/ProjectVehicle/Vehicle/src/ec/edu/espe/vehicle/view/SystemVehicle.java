@@ -6,7 +6,6 @@
 package ec.edu.espe.vehicle.view;
 import ec.edu.espe.vehicle.model.Accessory;
 import ec.edu.espe.vehicle.model.Register;
-import ec.edu.espe.vehicle.model.ModelofVehicle;
 import ec.edu.espe.vehicle.model.Vehicle;
 
 import java.util.Scanner; // Falta library json
@@ -24,9 +23,12 @@ public class SystemVehicle {
         String tipoDeVehicle;
         int priceVehicle;
         int modelVehicle;
-        int mileageVehicle;
-              
-         
+        int mileageVehicle;              
+        int amountOfSale;
+        String vehiculoSold;
+        String name;
+        String surname;
+        int documentBuyer;
              
         Scanner read = new Scanner(System.in);
         int option;
