@@ -12,5 +12,7 @@ package ec.edu.espe.vehicle.controller;
 public interface VehicleDearleship {
     
     public void price(float amount);
+    public void speedUp(int amount); 
+    
     
 }
