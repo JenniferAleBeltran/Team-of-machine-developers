@@ -39,6 +39,13 @@ public class SystemVehicle {
         Scanner in = new Scanner (System.in);
         
         System.out.println ("***** WELCOME TO THE CAR DEALERSHIP *****");
+        
+        while(option != 0){
+            System.out.println ("Select the option you want to make");
+              System.out.println (">> Registrar vehicle: 1");
+              System.out.println (">> Register vehicle sale: 2");
+              System.out.println (">> Exit consessionary: 0");
     }
 }
     
+} 
