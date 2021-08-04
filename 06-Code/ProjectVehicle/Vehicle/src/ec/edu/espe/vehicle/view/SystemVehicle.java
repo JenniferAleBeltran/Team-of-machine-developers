@@ -105,6 +105,21 @@ public class SystemVehicle {
                 name = reader.next ();
                 
                 System.out.println ("Enter the buyer's last name:");
+                lastname = reader.next();
+                
+                System.out.println ("Enter the buyer's identification document");
+                documentBuyer = reader.nextInt ();
+                
+                Register registrationOfSale = new Register (amountOfSale, vehicleSold, name, lastname, documentBuyer);
+                
+                System.out.println ("\n");
+                
+                System.out.println ("** SALE RECORD **");
+                System.out.println ("> The amount of the sale:" + registrationOfSale.getAmountOfSale ());
+                System.out.println ("> The vehicle sold:" + registrationOfSale.getVehicleSold ());
+                System.out.println ("> The buyer's name:" + registrationOfSale.getName ());
+                System.out.println ("> The buyer's last name:" + registrationOfSale.getLastname ());
+                System.out.println ("> The buyer's identification document:" + registrationOfSale.getDocumentBuyer ());
     }
         }
         
