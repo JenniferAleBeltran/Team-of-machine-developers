@@ -7,8 +7,10 @@ package ec.edu.espe.vehicle.controller;
 
 import ec.edu.espe.vehicle.model.Vehicle;
 import ec.edu.espe.vehicle.view.FrmVehicle;
-import utils.PersistenceI;
 import utils.VehicleDearleship;
+import java.util.ArrayList;
+import utils.DBManager;
+import utils.PersistenceI;
 
 /**
  *
@@ -23,6 +25,48 @@ public class VehicleController {
     /**
      * @return the vehicle
      */
+   
+   
+   public void add(Vehicle vehicle){
+        //TODO add contact to database
+        //TODO call utils classes
+        persistence = new DBManager();
+        //TODO convert contact to json;
+        String VehicleJson = "{\"Brand\":\"Chevrolet\"}";
+        
+    }
+    
+    public ArrayList<Vehicle> find(String code){
+        ArrayList<Vehicle> vehicles = new ArrayList<>();
+        //TODO find the contact(s) by email using utils
+        Vehicle vehicle = new Vehicle("123", "Chevrolet", "vehicle", 13000, "red", 10000);
+        vehicles.add(vehicle);
+        return vehicles;
+    }
+    
+    public boolean delete(String code){
+        boolean deleted = false;
+        //TODO 
+         ArrayList<Vehicle> vehicles = new ArrayList<>();
+        vehicles = find (code);
+        if(vehicles.size()>0){
+            //TODO delete from data base
+            deleted = true;
+        }
+        return deleted;
+    }
+    
+    public boolean update(String code){
+        boolean updated = false;
+        //TODO 
+         ArrayList<Vehicle> vehicles = new ArrayList<>();
+        vehicles = find (code);
+        if(vehicles.size()>0){
+            updated = true;
+        }
+        return updated;
+         }
+    
     public Vehicle getVehicle() {
         return vehicle;
     }
