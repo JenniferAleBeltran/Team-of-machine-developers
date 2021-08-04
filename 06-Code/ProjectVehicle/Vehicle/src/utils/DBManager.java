@@ -9,6 +9,9 @@ package utils;
  *
  * @author Fernanda Cadena Team of Machine ESPE-DCCD
  */
-public class DBManager {
-    
+public class DBManager implements VehicleDearleship{
+     
+        
+  
 }
+

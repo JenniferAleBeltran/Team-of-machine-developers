@@ -10,9 +10,11 @@ package utils;
  * @author Vanessa Cayambe Team of machine ESPE-DCCO
  */
 public interface VehicleDearleship {
-    
-    public void price(float amount);
-    public void speedUp(int amount); 
-    
+    public String add();
+    public String update();
+    public String find();
+    public String delete();
+     
+       
     
 }
