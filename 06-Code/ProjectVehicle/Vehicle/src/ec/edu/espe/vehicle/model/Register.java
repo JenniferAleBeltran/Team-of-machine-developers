@@ -16,6 +16,14 @@ public class Register {
     private String lastname;
     private int documentBuyer;
 
+    public Register(int amountOfSale, String VehicleSold, String name, String lastname, int documentBuyer) {
+        this.amountOfSale = amountOfSale;
+        this.VehicleSold = VehicleSold;
+        this.name = name;
+        this.lastname = lastname;
+        this.documentBuyer = documentBuyer;
+    }
+
     /**
      * @return the amountOfSale
      */
