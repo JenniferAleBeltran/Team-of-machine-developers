@@ -20,14 +20,14 @@ public class SystemVehicle {
 
         String codeVehicle; 
         String brandVehicle;
-        String tipoDeVehicle;
+        String typeVehicle;
         int priceVehicle;
         int modelVehicle;
         int mileageVehicle;              
         int amountOfSale;
-        String vehiculoSold;
+        String vehicleSold;
         String name;
-        String surname;
+        String lastname;
         int documentBuyer;
              
         
@@ -38,7 +38,7 @@ public class SystemVehicle {
         
         Scanner in = new Scanner (System.in);
         
-        System.out.println ("***** WELCOME TO THE DEALER *****");
+        System.out.println ("***** WELCOME TO THE CAR DEALERSHIP *****");
     }
 }
     
