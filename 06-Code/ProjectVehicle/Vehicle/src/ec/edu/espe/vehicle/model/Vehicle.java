@@ -16,22 +16,22 @@ public class Vehicle {
     private String brand;
     private String type;
     private int price;    
-    private int model;
+    private String ColorVehicle;
     private int mileage;
     private ArrayList<Accessory> accessory = new ArrayList<>();
 
-    public Vehicle(String code, String brand, String type, int price, int model, int mileage) {
+    public Vehicle(String code, String brand, String type, int price, String colorVehicle, int mileage) {
         this.code = code;
         this.brand = brand;
         this.type = type;
         this.price = price;
-        this.model = model;
+        this.ColorVehicle = colorVehicle;
         this.mileage = mileage;
     }
 
     @Override
     public String toString() {
-        return "Vehicle{" + "code=" + code + ", brand=" + brand + ", type=" + type + ", price=" + price + ", model=" + model + ", mileage=" + mileage + ", accessory=" + accessory + '}';
+        return "Vehicle{" + "code=" + code + ", brand=" + brand + ", type=" + type + ", price=" + price + ", ColorVehicle=" + ColorVehicle + ", mileage=" + mileage + ", accessory=" + accessory + '}';
     }
 
     /**
@@ -91,17 +91,17 @@ public class Vehicle {
     }
 
     /**
-     * @return the model
+     * @return the ColorVehicle
      */
-    public int getModel() {
-        return model;
+    public String getColorVehicle() {
+        return ColorVehicle;
     }
 
     /**
-     * @param model the model to set
+     * @param ColorVehicle the ColorVehicle to set
      */
-    public void setModel(int model) {
-        this.model = model;
+    public void setColorVehicle(String ColorVehicle) {
+        this.ColorVehicle = ColorVehicle;
     }
 
     /**
@@ -132,5 +132,4 @@ public class Vehicle {
         this.accessory = accessory;
     }
 
-   
 }

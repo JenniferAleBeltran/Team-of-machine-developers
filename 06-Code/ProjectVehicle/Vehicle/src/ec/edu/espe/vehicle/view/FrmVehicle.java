@@ -46,6 +46,8 @@ public class FrmVehicle extends javax.swing.JFrame {
         RbtType = new javax.swing.JRadioButton();
         RbtType1 = new javax.swing.JRadioButton();
         RbtType2 = new javax.swing.JRadioButton();
+        JprPrice = new javax.swing.JTextField();
+        jComboBox1 = new javax.swing.JComboBox<>();
         PnlinputButton = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -98,6 +100,8 @@ public class FrmVehicle extends javax.swing.JFrame {
 
         RbtType2.setText("Motorcycle");
 
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
         javax.swing.GroupLayout PnlinputLayout = new javax.swing.GroupLayout(Pnlinput);
         Pnlinput.setLayout(PnlinputLayout);
         PnlinputLayout.setHorizontalGroup(
@@ -129,7 +133,10 @@ public class FrmVehicle extends javax.swing.JFrame {
                                             .addComponent(RbtType2)
                                             .addComponent(RbtType1)
                                             .addComponent(RbtType)))))
-                            .addComponent(jLabel5)
+                            .addGroup(PnlinputLayout.createSequentialGroup()
+                                .addComponent(jLabel5)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(JprPrice, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(PnlinputLayout.createSequentialGroup()
                                 .addComponent(jLabel2)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -141,7 +148,9 @@ public class FrmVehicle extends javax.swing.JFrame {
                         .addContainerGap()
                         .addGroup(PnlinputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jLabel6)
-                            .addComponent(jLabel7))))
+                            .addComponent(jLabel7))
+                        .addGap(18, 18, 18)
+                        .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(377, Short.MAX_VALUE))
         );
         PnlinputLayout.setVerticalGroup(
@@ -169,10 +178,14 @@ public class FrmVehicle extends javax.swing.JFrame {
                     .addComponent(RbtType2))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(RbtBrand3)
-                .addGap(16, 16, 16)
-                .addComponent(jLabel5)
-                .addGap(26, 26, 26)
-                .addComponent(jLabel6)
+                .addGap(13, 13, 13)
+                .addGroup(PnlinputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel5)
+                    .addComponent(JprPrice, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(20, 20, 20)
+                .addGroup(PnlinputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel6)
+                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(jLabel7)
                 .addGap(18, 18, 18)
@@ -209,7 +222,7 @@ public class FrmVehicle extends javax.swing.JFrame {
                 .addComponent(Pnlinput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(PnlinputButton, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 32, Short.MAX_VALUE))
+                .addGap(0, 29, Short.MAX_VALUE))
         );
 
         pack();
@@ -263,6 +276,7 @@ public class FrmVehicle extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTextField JprPrice;
     private javax.swing.JPanel Pnlinput;
     private javax.swing.JPanel PnlinputButton;
     private javax.swing.JRadioButton RbtBrand;
@@ -274,6 +288,7 @@ public class FrmVehicle extends javax.swing.JFrame {
     private javax.swing.JRadioButton RbtType2;
     private javax.swing.JTextField TxtCodeVehicle;
     private javax.swing.ButtonGroup buttonGroup1;
+    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

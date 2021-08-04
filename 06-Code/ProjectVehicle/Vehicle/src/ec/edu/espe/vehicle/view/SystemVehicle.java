@@ -22,7 +22,7 @@ public class SystemVehicle {
         String brandVehicle;
         String typeVehicle;
         int priceVehicle;
-        int modelVehicle;
+        String ColorVehicle;
         int mileageVehicle;              
         int amountOfSale;
         String vehicleSold;
@@ -74,14 +74,14 @@ public class SystemVehicle {
                 System.out.println ("Enter the price of the vehicle");
                 priceVehicle = reader.nextInt ();
                 
-                System.out.println ("Enter the model year of the vehicle");
-                modelVehicle = reader.nextInt ();
+                System.out.println ("Enter the color  of the vehicle");
+                ColorVehicle = reader.next();
                 
                 System.out.println ("Enter vehicle mileage");
                 mileageVehicle = reader.nextInt (); 
                 
                 Vehicle vehicle = new Vehicle (codeVehicle, brandVehicle,
-                typeVehicle, priceVehicle,  modelVehicle, mileageVehicle);
+                typeVehicle, priceVehicle,  ColorVehicle, mileageVehicle);
                 
                 System.out.println ("\n");
           
@@ -90,7 +90,7 @@ public class SystemVehicle {
                 System.out.println ("> Make:" + vehicle.getBrand ());
                 System.out.println ("> Type:" + vehicle.getType ());
                 System.out.println ("> Price:" + vehicle.getPrice ());
-                System.out.println ("> Model:" + vehicle.getModel ());
+                System.out.println ("> Color:" + vehicle.getColorVehicle());
                 System.out.println ("> Mileage:" + vehicle.getMileage () + "Km");
             }
         
