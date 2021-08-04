@@ -27,21 +27,205 @@ public class FrmVehicle extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        buttonGroup1 = new javax.swing.ButtonGroup();
+        Pnlinput = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        TxtCodeVehicle = new javax.swing.JTextField();
+        RbtBrand = new javax.swing.JRadioButton();
+        RbtBrand1 = new javax.swing.JRadioButton();
+        RbtBrand2 = new javax.swing.JRadioButton();
+        RbtBrand3 = new javax.swing.JRadioButton();
+        RbtType = new javax.swing.JRadioButton();
+        RbtType1 = new javax.swing.JRadioButton();
+        RbtType2 = new javax.swing.JRadioButton();
+        PnlinputButton = new javax.swing.JPanel();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel1.setText("WELCOME TO THE CAR DEALERSHIP");
+
+        jLabel2.setText("Code Vehicle: ");
+
+        jLabel3.setText("Brand Vehicle: ");
+
+        jLabel4.setText("Type Vehicle: ");
+
+        jLabel5.setText("Price Vehicle: ");
+
+        jLabel6.setText("Model Vehicle: ");
+
+        jLabel7.setText("Mileage Vehicle: ");
+
+        jLabel8.setText("Amount of Sale: ");
+
+        jLabel9.setText("Vehicle Sold: ");
+
+        RbtBrand.setText("Chevrolet");
+        RbtBrand.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                RbtBrandActionPerformed(evt);
+            }
+        });
+
+        RbtBrand1.setText("Toyota");
+
+        RbtBrand2.setText("Kia");
+        RbtBrand2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                RbtBrand2ActionPerformed(evt);
+            }
+        });
+
+        RbtBrand3.setText("Hyundai");
+        RbtBrand3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                RbtBrand3ActionPerformed(evt);
+            }
+        });
+
+        RbtType.setText("Vehicle");
+
+        RbtType1.setText("Truck");
+
+        RbtType2.setText("Motorcycle");
+
+        javax.swing.GroupLayout PnlinputLayout = new javax.swing.GroupLayout(Pnlinput);
+        Pnlinput.setLayout(PnlinputLayout);
+        PnlinputLayout.setHorizontalGroup(
+            PnlinputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(PnlinputLayout.createSequentialGroup()
+                .addGroup(PnlinputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(PnlinputLayout.createSequentialGroup()
+                        .addGap(226, 226, 226)
+                        .addComponent(jLabel1))
+                    .addGroup(PnlinputLayout.createSequentialGroup()
+                        .addGap(28, 28, 28)
+                        .addGroup(PnlinputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel9)
+                            .addGroup(PnlinputLayout.createSequentialGroup()
+                                .addComponent(jLabel3)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(PnlinputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(RbtBrand3)
+                                    .addGroup(PnlinputLayout.createSequentialGroup()
+                                        .addGroup(PnlinputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addGroup(PnlinputLayout.createSequentialGroup()
+                                                .addComponent(RbtBrand)
+                                                .addGap(141, 141, 141)
+                                                .addComponent(jLabel4))
+                                            .addComponent(RbtBrand1)
+                                            .addComponent(RbtBrand2))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addGroup(PnlinputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(RbtType2)
+                                            .addComponent(RbtType1)
+                                            .addComponent(RbtType)))))
+                            .addComponent(jLabel5)
+                            .addGroup(PnlinputLayout.createSequentialGroup()
+                                .addComponent(jLabel2)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(TxtCodeVehicle, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(PnlinputLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel8))
+                    .addGroup(PnlinputLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(PnlinputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel6)
+                            .addComponent(jLabel7))))
+                .addContainerGap(377, Short.MAX_VALUE))
+        );
+        PnlinputLayout.setVerticalGroup(
+            PnlinputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(PnlinputLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel1)
+                .addGap(18, 18, 18)
+                .addGroup(PnlinputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel2)
+                    .addComponent(TxtCodeVehicle, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(PnlinputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel3)
+                    .addComponent(RbtBrand)
+                    .addComponent(jLabel4)
+                    .addComponent(RbtType))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(PnlinputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(RbtBrand1)
+                    .addComponent(RbtType1))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(PnlinputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(RbtBrand2)
+                    .addComponent(RbtType2))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(RbtBrand3)
+                .addGap(16, 16, 16)
+                .addComponent(jLabel5)
+                .addGap(26, 26, 26)
+                .addComponent(jLabel6)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel7)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel8)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel9)
+                .addContainerGap(105, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout PnlinputButtonLayout = new javax.swing.GroupLayout(PnlinputButton);
+        PnlinputButton.setLayout(PnlinputButtonLayout);
+        PnlinputButtonLayout.setHorizontalGroup(
+            PnlinputButtonLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+        PnlinputButtonLayout.setVerticalGroup(
+            PnlinputButtonLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 197, Short.MAX_VALUE)
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(Pnlinput, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(PnlinputButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(0, 9, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(Pnlinput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(PnlinputButton, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 32, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void RbtBrandActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RbtBrandActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_RbtBrandActionPerformed
+
+    private void RbtBrand2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RbtBrand2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_RbtBrand2ActionPerformed
+
+    private void RbtBrand3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RbtBrand3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_RbtBrand3ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -79,5 +263,25 @@ public class FrmVehicle extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel Pnlinput;
+    private javax.swing.JPanel PnlinputButton;
+    private javax.swing.JRadioButton RbtBrand;
+    private javax.swing.JRadioButton RbtBrand1;
+    private javax.swing.JRadioButton RbtBrand2;
+    private javax.swing.JRadioButton RbtBrand3;
+    private javax.swing.JRadioButton RbtType;
+    private javax.swing.JRadioButton RbtType1;
+    private javax.swing.JRadioButton RbtType2;
+    private javax.swing.JTextField TxtCodeVehicle;
+    private javax.swing.ButtonGroup buttonGroup1;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     // End of variables declaration//GEN-END:variables
 }
