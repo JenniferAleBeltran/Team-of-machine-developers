@@ -5,6 +5,11 @@
  */
 package ec.edu.espe.vehicle.view;
 
+import ec.edu.espe.vehicle.controller.VehicleController;
+import ec.edu.espe.vehicle.model.Vehicle;
+import java.util.ArrayList;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author < Jennifer Beltran Team of machine Developers>
@@ -307,6 +312,27 @@ public class FrmVehicle extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void RbtBrandActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RbtBrandActionPerformed
+       Vehicle vehicle; 
+       VehicleController vehicleController; 
+       String CodeVehicle = TxtCodeVehicle.getText();
+       String BrandVehicle  = RbtBrand.getSelectedIcon().toString();
+       String TypeVehicle  = RbtType.getSelectedIcon().toString();
+       String PriceVehicle  = JprPrice.getText();
+       String ColorVehicle = jRaRed.getSelectedIcon().toString();
+       String MileageVehicle = TextMile.getText();
+       String AmountofSale  = TextAmount.getText();
+       String VehicleSold  = BtnNew.getSelectedIcon().toString();
+       
+       ArrayList<Vehicle> vehicles = new ArrayList<>(); 
+       int monthIkew = 3; 
+       
+       //Vehicle vehicle = new vehicle(CodeVehicle,BrandVehicle,TypeVehicle,PriceVehicle,ColorVehicle,MileageVehicle,AmountofSale,VehicleSold);                 
+       
+       //contactController = new ContactController(contact, this); 
+       //contactController.add(contact); 
+       
+       
+       JOptionPane.showMessageDialog(rootPane, "adding + " + TxtCodeVehicle.getName());
         // TODO add your handling code here:
     }//GEN-LAST:event_RbtBrandActionPerformed
 

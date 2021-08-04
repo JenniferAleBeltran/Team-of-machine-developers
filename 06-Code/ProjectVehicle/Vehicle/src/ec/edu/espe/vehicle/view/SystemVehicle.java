@@ -46,6 +46,7 @@ public class SystemVehicle {
               System.out.println (">> Register vehicle sale: 2");
               System.out.println (">> Exit consessionary: 0");
               
+              
               option = in.nextInt ();
             
                 if(option == 1) {
