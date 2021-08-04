@@ -42,23 +42,31 @@ public class SystemVehicle {
         
         while(option != 0){
             System.out.println ("Select the option you want to make");
-              System.out.println (">> Registrar vehicle: 1");
+              System.out.println (">> Register vehicle: 1");
               System.out.println (">> Register vehicle sale: 2");
               System.out.println (">> Exit consessionary: 0");
               
               option = in.nextInt ();
             
-            yes (option == 1) {
-                System.out.println ("\ n");
+                if(option == 1) {
+                System.out.println ("\n");
                 
-                String [] typeVehicle = {"Car", "Truck", "Motorcycle"};
+                String[] typeVehicle1 = {"Vehicle", "Truck", "Motorcycle"};
                 
                 
                 System.out.println ("Enter the vehicle code:");
                 codeVehicle= reader.next ();
                 
-                System.out.println ("Enter the make of the vehicle:");
+                System.out.println ("Enter the brand of the vehicle:");
                 brandVehicle = reader.next ();
+                
+                System.out.println ("\n");
+                
+                System.out.println ("** Enter the vehicle type **");
+                System.out.println (">> Vehicle: 0");
+                System.out.println (">> Truck: 1");
+                System.out.println (">> Motorcycle: 2");
+                String type = reader.next ();
         }
     }
         
