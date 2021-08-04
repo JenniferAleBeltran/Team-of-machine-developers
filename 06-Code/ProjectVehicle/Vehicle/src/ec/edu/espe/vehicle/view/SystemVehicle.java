@@ -93,8 +93,20 @@ public class SystemVehicle {
                 System.out.println ("> Model:" + vehicle.getModel ());
                 System.out.println ("> Mileage:" + vehicle.getMileage () + "Km");
             }
+        
+                if (option == 2) {
+                System.out.println ("Enter the amount of the sale:");
+                amountOfSale = in.nextInt ();
                 
+                System.out.println ("Enter the vehicle sold code:");
+                vehicleSold = reader.next ();
+                
+                System.out.println ("Enter the buyer's name:");
+                name = reader.next ();
+                
+                System.out.println ("Enter the buyer's last name:");
     }
+        }
         
 
 }
