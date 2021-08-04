@@ -10,7 +10,6 @@ import ec.edu.espe.vehicle.view.FrmVehicle;
 import utils.VehicleDearleship;
 import java.util.ArrayList;
 import utils.DBManager;
-import utils.PersistenceI;
 
 /**
  *
@@ -20,7 +19,7 @@ public class VehicleController {
 
    private Vehicle vehicle;
    private FrmVehicle frmVehicle;
-   private PersistenceI persistence;
+   private VehicleDearleship vehicleDearleship;
 
     /**
      * @return the vehicle
@@ -30,7 +29,7 @@ public class VehicleController {
    public void add(Vehicle vehicle){
         //TODO add contact to database
         //TODO call utils classes
-        persistence = new DBManager();
+        vehicleDearleship = new DBManager();
         //TODO convert contact to json;
         String VehicleJson = "{\"Brand\":\"Chevrolet\"}";
         
@@ -95,15 +94,15 @@ public class VehicleController {
     /**
      * @return the persistence
      */
-    public PersistenceI getPersistence() {
-        return persistence;
+    public VehicleDearleship getPersistence() {
+        return vehicleDearleship;
     }
 
     /**
      * @param persistence the persistence to set
      */
-    public void setPersistence(PersistenceI persistence) {
-        this.persistence = persistence;
+    public void setPersistence(VehicleDearleship persistence) {
+        this.vehicleDearleship = persistence;
     }
 
     
