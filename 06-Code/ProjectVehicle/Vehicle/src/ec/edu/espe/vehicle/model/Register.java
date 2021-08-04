@@ -16,6 +16,76 @@ public class Register {
     private String lastname;
     private int documentBuyer;
 
+    /**
+     * @return the amountOfSale
+     */
+    public int getAmountOfSale() {
+        return amountOfSale;
+    }
+
+    /**
+     * @param amountOfSale the amountOfSale to set
+     */
+    public void setAmountOfSale(int amountOfSale) {
+        this.amountOfSale = amountOfSale;
+    }
+
+    /**
+     * @return the VehicleSold
+     */
+    public String getVehicleSold() {
+        return VehicleSold;
+    }
+
+    /**
+     * @param VehicleSold the VehicleSold to set
+     */
+    public void setVehicleSold(String VehicleSold) {
+        this.VehicleSold = VehicleSold;
+    }
+
+    /**
+     * @return the name
+     */
+    public String getName() {
+        return name;
+    }
+
+    /**
+     * @param name the name to set
+     */
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    /**
+     * @return the lastname
+     */
+    public String getLastname() {
+        return lastname;
+    }
+
+    /**
+     * @param lastname the lastname to set
+     */
+    public void setLastname(String lastname) {
+        this.lastname = lastname;
+    }
+
+    /**
+     * @return the documentBuyer
+     */
+    public int getDocumentBuyer() {
+        return documentBuyer;
+    }
+
+    /**
+     * @param documentBuyer the documentBuyer to set
+     */
+    public void setDocumentBuyer(int documentBuyer) {
+        this.documentBuyer = documentBuyer;
+    }
+
 
     
 }
