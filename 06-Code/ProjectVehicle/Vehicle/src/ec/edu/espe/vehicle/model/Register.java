@@ -16,6 +16,11 @@ public class Register {
     private String lastname;
     private int documentBuyer;
 
+    @Override
+    public String toString() {
+        return "Register{" + "amountOfSale=" + amountOfSale + ", VehicleSold=" + VehicleSold + ", name=" + name + ", lastname=" + lastname + ", documentBuyer=" + documentBuyer + '}';
+    }
+
     public Register(int amountOfSale, String VehicleSold, String name, String lastname, int documentBuyer) {
         this.amountOfSale = amountOfSale;
         this.VehicleSold = VehicleSold;
