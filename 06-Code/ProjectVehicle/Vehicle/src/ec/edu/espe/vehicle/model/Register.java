@@ -10,11 +10,11 @@ package ec.edu.espe.vehicle.model;
  * @author < Jennifer Beltran Team of machine Developers>
  */
 public class Register {
-    private int amountOfSale;
-    private String VehicleSold;
-    private String name;
-    private String lastname;
-    private int documentBuyer;
+        private int amountOfSale;
+        private String VehicleSold;
+        private String name;
+        private String lastname;
+        private int documentBuyer;
 
     @Override
     public String toString() {
