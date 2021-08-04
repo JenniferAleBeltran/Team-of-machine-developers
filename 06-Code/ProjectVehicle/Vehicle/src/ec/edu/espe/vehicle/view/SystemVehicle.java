@@ -51,7 +51,7 @@ public class SystemVehicle {
                 if(option == 1) {
                 System.out.println ("\n");
                 
-                String[] typeVehicle1 = {"Vehicle", "Truck", "Motorcycle"};
+                String[] typeOfVehicles = {"Vehicle", "Truck", "Motorcycle"};
                 
                 
                 System.out.println ("Enter the vehicle code:");
@@ -67,6 +67,18 @@ public class SystemVehicle {
                 System.out.println (">> Truck: 1");
                 System.out.println (">> Motorcycle: 2");
                 String type = reader.next ();
+                
+                int intType = Integer.parseInt (type);
+                typeVehicle = typeOfVehicles [intType];
+                
+                System.out.println ("Enter the price of the vehicle");
+                priceVehicle = reader.nextInt ();
+                
+                System.out.println ("Enter the model year of the vehicle");
+                modelVehicle = reader.nextInt ();
+                
+                System.out.println ("Enter vehicle mileage");
+                mileageVehicle = reader.nextInt (); 
         }
     }
         
