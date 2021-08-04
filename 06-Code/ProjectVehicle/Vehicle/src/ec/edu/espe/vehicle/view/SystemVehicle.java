@@ -5,7 +5,7 @@
 
 package ec.edu.espe.vehicle.view;
 import ec.edu.espe.vehicle.model.Accessory;
-import ec.edu.espe.vehicle.model.Client;
+import ec.edu.espe.vehicle.model.Register;
 import ec.edu.espe.vehicle.model.ModelofVehicle;
 import ec.edu.espe.vehicle.model.Vehicle;
 
