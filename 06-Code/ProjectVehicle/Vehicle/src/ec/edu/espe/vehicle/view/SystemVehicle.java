@@ -19,9 +19,15 @@ public class SystemVehicle {
 
     public static void main(String[] args) {
 
-        float money;
-        String brand;
-        String color;
+        String codeVehicle; 
+        String brandVehicle;
+        String tipoDeVehicle;
+        int priceVehicle;
+        int modelVehicle;
+        int mileageVehicle;
+              
+         
+             
         Scanner read = new Scanner(System.in);
         int option;
         int option2;
