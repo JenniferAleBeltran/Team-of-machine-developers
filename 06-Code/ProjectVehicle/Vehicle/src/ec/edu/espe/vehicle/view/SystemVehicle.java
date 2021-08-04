@@ -79,7 +79,21 @@ public class SystemVehicle {
                 
                 System.out.println ("Enter vehicle mileage");
                 mileageVehicle = reader.nextInt (); 
-        }
+                
+                Vehicle vehicle = new Vehicle (codeVehicle, brandVehicle,
+                typeVehicle, priceVehicle,  modelVehicle, mileageVehicle);
+                
+                System.out.println ("\n");
+          
+                System.out.println ("** YOUR VEHICLE HAS BEEN REGISTERED **");
+                System.out.println ("> Code:" + vehicle.getCode ());
+                System.out.println ("> Make:" + vehicle.getBrand ());
+                System.out.println ("> Type:" + vehicle.getType ());
+                System.out.println ("> Price:" + vehicle.getPrice ());
+                System.out.println ("> Model:" + vehicle.getModel ());
+                System.out.println ("> Mileage:" + vehicle.getMileage () + "Km");
+            }
+                
     }
         
 
