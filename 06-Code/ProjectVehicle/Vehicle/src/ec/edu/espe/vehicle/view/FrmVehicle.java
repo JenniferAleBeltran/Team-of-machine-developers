@@ -70,6 +70,8 @@ public class FrmVehicle extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        Pnlinput.setBackground(new java.awt.Color(102, 255, 102));
+
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel1.setText("WELCOME TO THE CAR DEALERSHIP");
 
