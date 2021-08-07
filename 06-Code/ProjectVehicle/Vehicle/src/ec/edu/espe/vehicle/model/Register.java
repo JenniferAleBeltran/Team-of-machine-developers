@@ -16,6 +16,10 @@ public class Register {
         private String lastname;
         private int documentBuyer;
 
+    public Register() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
     @Override
     public String toString() {
         return "Register{" + "amountOfSale=" + amountOfSale + ", VehicleSold=" + VehicleSold + ", name=" + name + ", lastname=" + lastname + ", documentBuyer=" + documentBuyer + '}';
@@ -98,7 +102,4 @@ public class Register {
     public void setDocumentBuyer(int documentBuyer) {
         this.documentBuyer = documentBuyer;
     }
-
-
-    
 }

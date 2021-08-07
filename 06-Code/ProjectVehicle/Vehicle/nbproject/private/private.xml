@@ -5,7 +5,13 @@
         <group>
             <file>file:/C:/Users/user/Desktop/Vehicle-Project/Team-of-machine-developers/06-Code/ProjectVehicle/Vehicle/src/ec/edu/espe/vehicle/view/SystemVehicle.java</file>
             <file>file:/C:/Users/user/Desktop/Vehicle-Project/Team-of-machine-developers/06-Code/ProjectVehicle/Vehicle/src/ec/edu/espe/vehicle/view/Login.java</file>
+            <file>file:/C:/Users/user/Desktop/Vehicle-Project/Team-of-machine-developers/06-Code/ProjectVehicle/Vehicle/src/ec/edu/espe/vehicle/model/Vehicle.java</file>
             <file>file:/C:/Users/user/Desktop/Vehicle-Project/Team-of-machine-developers/06-Code/ProjectVehicle/Vehicle/src/ec/edu/espe/vehicle/view/FrmVehicle.java</file>
+            <file>file:/C:/Users/user/Desktop/Vehicle-Project/Team-of-machine-developers/06-Code/ProjectVehicle/Vehicle/src/ec/edu/espe/vehicle/controller/VehicleController.java</file>
+            <file>file:/C:/Users/user/Desktop/Vehicle-Project/Team-of-machine-developers/06-Code/ProjectVehicle/Vehicle/src/ec/edu/espe/vehicle/view/RegisterUser.java</file>
+            <file>file:/C:/Users/user/Desktop/Vehicle-Project/Team-of-machine-developers/06-Code/ProjectVehicle/Vehicle/src/ec/edu/espe/vehicle/model/Register.java</file>
+            <file>file:/C:/Users/user/Desktop/Vehicle-Project/Team-of-machine-developers/06-Code/ProjectVehicle/Vehicle/src/ec/edu/espe/vehicle/model/Brand.java</file>
+            <file>file:/C:/Users/user/Desktop/Vehicle-Project/Team-of-machine-developers/06-Code/ProjectVehicle/Vehicle/src/ec/edu/espe/vehicle/model/Accessory.java</file>
         </group>
     </open-files>
 </project-private>
