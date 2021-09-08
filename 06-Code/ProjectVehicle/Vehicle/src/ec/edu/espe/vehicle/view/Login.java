@@ -145,7 +145,7 @@ public class Login extends javax.swing.JFrame {
                     Properties properties = gson.fromJson(cursor.next().toString(), Properties.class);
                     System.out.println(properties.get("password"));
                     if (properties.get("password").equals(txtPassword.getText())) {
-                        JOptionPane.showMessageDialog(null, "Welcome to the Library system ESPE");
+                        JOptionPane.showMessageDialog(null, "Welcome to the Dilership");
                         FrmVehicle menu = new FrmVehicle();
                         menu.setVisible(true);
                         this.dispose();
