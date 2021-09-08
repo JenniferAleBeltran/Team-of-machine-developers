@@ -24,7 +24,7 @@ public class Accessory {
     
     @Override
     public String toString() {
-        return "Accessory{" + "seat=" + getSeat() + ", mirror=" + getMirror() + ", airconditioning=" + getAirconditioning() + '}';
+        return "Accessory{" + "Seat=" + getSeat() + ", Mirror=" + getMirror() + ", Sirconditioning=" + getAirconditioning() + '}';
     }
 
     /**
