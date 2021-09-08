@@ -3,14 +3,15 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Geraldi/Desktop/Team-of-machine-developers/06-Code/ProjectVehicle/Vehicle/src/ec/edu/espe/vehicle/view/FrmVehicle.java</file>
-            <file>file:/C:/Users/Geraldi/Desktop/Team-of-machine-developers/06-Code/ProjectVehicle/Vehicle/src/utils/VehicleDearleship.java</file>
+            <file>file:/C:/Users/Geraldi/Desktop/Team-of-machine-developers/06-Code/ProjectVehicle/Vehicle/src/ec/edu/espe/vehicle/model/SortingContext.java</file>
+            <file>file:/C:/Users/Geraldi/Desktop/Team-of-machine-developers/06-Code/ProjectVehicle/Vehicle/src/ec/edu/espe/vehicle/model/QuickSort.java</file>
             <file>file:/C:/Users/Geraldi/Desktop/Team-of-machine-developers/06-Code/ProjectVehicle/Vehicle/src/ec/edu/espe/vehicle/view/SystemVehicle.java</file>
+            <file>file:/C:/Users/Geraldi/Desktop/Team-of-machine-developers/06-Code/ProjectVehicle/Vehicle/src/ec/edu/espe/vehicle/controller/BubbleSort.java</file>
             <file>file:/C:/Users/Geraldi/Desktop/Team-of-machine-developers/06-Code/ProjectVehicle/Vehicle/src/ec/edu/espe/vehicle/controller/VehicleController.java</file>
-            <file>file:/C:/Users/Geraldi/Desktop/Team-of-machine-developers/06-Code/ProjectVehicle/Vehicle/src/utils/DBManager.java</file>
+            <file>file:/C:/Users/Geraldi/Desktop/Team-of-machine-developers/06-Code/ProjectVehicle/Vehicle/src/ec/edu/espe/vehicle/view/SortingAlgorithms.java</file>
+            <file>file:/C:/Users/Geraldi/Desktop/Team-of-machine-developers/06-Code/ProjectVehicle/Vehicle/src/ec/edu/espe/vehicle/model/SortingStrategy.java</file>
+            <file>file:/C:/Users/Geraldi/Desktop/Team-of-machine-developers/06-Code/ProjectVehicle/Vehicle/src/ec/edu/espe/vehicle/model/InsertionSort.java</file>
             <file>file:/C:/Users/Geraldi/Desktop/Team-of-machine-developers/06-Code/ProjectVehicle/Vehicle/src/ec/edu/espe/vehicle/view/RegisterUser.java</file>
-            <file>file:/C:/Users/Geraldi/Desktop/Team-of-machine-developers/06-Code/ProjectVehicle/Vehicle/src/ec/edu/espe/vehicle/view/Login.java</file>
-            <file>file:/C:/Users/Geraldi/Desktop/Team-of-machine-developers/06-Code/ProjectVehicle/Vehicle/src/utils/Manager.java</file>
         </group>
     </open-files>
 </project-private>
