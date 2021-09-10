@@ -266,7 +266,7 @@ public class RegisterUser extends javax.swing.JFrame {
                     // TODO add your handling code here:
 
                     MongoClient mongo = new MongoClient("localhost", 27017);
-                    DB db = mongo.getDB("journaldev");
+                    DB db = mongo.getDB("database");
                     DBCollection col = db.getCollection("users");
                     DBObject query = BasicDBObjectBuilder.start().add("document", txtDocument.getText()).get();
                     DBCursor cursor = col.find(query);
@@ -299,6 +299,7 @@ public class RegisterUser extends javax.swing.JFrame {
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
+    
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void txtNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNameActionPerformed

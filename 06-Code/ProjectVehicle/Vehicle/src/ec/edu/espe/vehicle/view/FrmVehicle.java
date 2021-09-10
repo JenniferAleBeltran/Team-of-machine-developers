@@ -114,6 +114,11 @@ public class FrmVehicle extends javax.swing.JFrame {
         });
 
         RbtType.setText("Vehicle");
+        RbtType.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                RbtTypeActionPerformed(evt);
+            }
+        });
 
         RbtType1.setText("Truck");
 
@@ -333,6 +338,10 @@ public class FrmVehicle extends javax.swing.JFrame {
         JOptionPane.showMessageDialog(rootPane, "adding + " + TxtCodeVehicle.getName());
         // TODO add your handling code here:
     }//GEN-LAST:event_RbtBrandActionPerformed
+
+    private void RbtTypeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RbtTypeActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_RbtTypeActionPerformed
 
     /**
      * @param args the command line arguments
