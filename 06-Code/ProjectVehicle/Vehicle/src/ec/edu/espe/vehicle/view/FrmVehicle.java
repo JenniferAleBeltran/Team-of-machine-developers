@@ -62,7 +62,6 @@ public class FrmVehicle extends javax.swing.JFrame {
         TextAmount = new javax.swing.JTextField();
         BtnNew = new javax.swing.JRadioButton();
         BtnUsed = new javax.swing.JRadioButton();
-        jBtAdd = new javax.swing.JButton();
         jBtSave = new javax.swing.JButton();
         jBtDelete = new javax.swing.JButton();
         jBtExit = new javax.swing.JButton();
@@ -134,8 +133,6 @@ public class FrmVehicle extends javax.swing.JFrame {
 
         BtnUsed.setText("Used");
 
-        jBtAdd.setText("Add");
-
         jBtSave.setText("Save");
         jBtSave.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -144,6 +141,11 @@ public class FrmVehicle extends javax.swing.JFrame {
         });
 
         jBtDelete.setText("Delete");
+        jBtDelete.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtDeleteActionPerformed(evt);
+            }
+        });
 
         jBtExit.setText("Exit");
         jBtExit.addActionListener(new java.awt.event.ActionListener() {
@@ -162,25 +164,31 @@ public class FrmVehicle extends javax.swing.JFrame {
                         .addGap(28, 28, 28)
                         .addGroup(PnlinputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(PnlinputLayout.createSequentialGroup()
-                                .addComponent(jLabel3)
+                                .addGroup(PnlinputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel3)
+                                    .addGroup(PnlinputLayout.createSequentialGroup()
+                                        .addGap(13, 13, 13)
+                                        .addComponent(jBtSave)))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(PnlinputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(RbtBrand3)
-                                    .addGroup(PnlinputLayout.createSequentialGroup()
-                                        .addGroup(PnlinputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(RbtBrand1)
-                                            .addComponent(RbtBrand2)
-                                            .addGroup(PnlinputLayout.createSequentialGroup()
-                                                .addComponent(RbtBrand)
-                                                .addGap(141, 141, 141)
-                                                .addGroup(PnlinputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addComponent(jRaGriss)
-                                                    .addComponent(jLabel4))))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addGroup(PnlinputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(RbtType2)
-                                            .addComponent(RbtType1)
-                                            .addComponent(RbtType)))))
+                                    .addGroup(PnlinputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                        .addComponent(jBtExit)
+                                        .addGroup(PnlinputLayout.createSequentialGroup()
+                                            .addGroup(PnlinputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                .addComponent(RbtBrand1)
+                                                .addComponent(RbtBrand2)
+                                                .addGroup(PnlinputLayout.createSequentialGroup()
+                                                    .addComponent(RbtBrand)
+                                                    .addGap(141, 141, 141)
+                                                    .addGroup(PnlinputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                        .addComponent(jRaGriss)
+                                                        .addComponent(jLabel4))))
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                            .addGroup(PnlinputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                .addComponent(RbtType2)
+                                                .addComponent(RbtType1)
+                                                .addComponent(RbtType))))))
                             .addGroup(PnlinputLayout.createSequentialGroup()
                                 .addComponent(jLabel5)
                                 .addGap(18, 18, 18)
@@ -196,14 +204,13 @@ public class FrmVehicle extends javax.swing.JFrame {
                             .addComponent(jLaMileAge))
                         .addGap(18, 18, 18)
                         .addGroup(PnlinputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(TextMile, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(PnlinputLayout.createSequentialGroup()
                                 .addComponent(jRaRed)
                                 .addGap(54, 54, 54)
-                                .addComponent(jRaBlue))
-                            .addComponent(TextMile, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(PnlinputLayout.createSequentialGroup()
-                        .addGap(226, 226, 226)
-                        .addComponent(jLabel1))
+                                .addGroup(PnlinputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jBtDelete)
+                                    .addComponent(jRaBlue)))))
                     .addGroup(PnlinputLayout.createSequentialGroup()
                         .addContainerGap()
                         .addGroup(PnlinputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -215,15 +222,9 @@ public class FrmVehicle extends javax.swing.JFrame {
                             .addComponent(BtnNew)
                             .addComponent(BtnUsed)))
                     .addGroup(PnlinputLayout.createSequentialGroup()
-                        .addGap(51, 51, 51)
-                        .addComponent(jBtAdd)
-                        .addGap(79, 79, 79)
-                        .addComponent(jBtSave)
-                        .addGap(96, 96, 96)
-                        .addComponent(jBtDelete)
-                        .addGap(79, 79, 79)
-                        .addComponent(jBtExit)))
-                .addContainerGap(307, Short.MAX_VALUE))
+                        .addGap(138, 138, 138)
+                        .addComponent(jLabel1)))
+                .addContainerGap(44, Short.MAX_VALUE))
         );
         PnlinputLayout.setVerticalGroup(
             PnlinputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -241,9 +242,9 @@ public class FrmVehicle extends javax.swing.JFrame {
                     .addComponent(jLabel4)
                     .addComponent(RbtType))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(PnlinputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(RbtBrand1)
-                    .addComponent(RbtType1))
+                .addGroup(PnlinputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(RbtType1)
+                    .addComponent(RbtBrand1, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(PnlinputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(RbtBrand2)
@@ -276,7 +277,6 @@ public class FrmVehicle extends javax.swing.JFrame {
                 .addComponent(BtnUsed)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 27, Short.MAX_VALUE)
                 .addGroup(PnlinputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jBtAdd)
                     .addComponent(jBtSave)
                     .addComponent(jBtDelete)
                     .addComponent(jBtExit))
@@ -287,20 +287,21 @@ public class FrmVehicle extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(Pnlinput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Pnlinput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(Pnlinput, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void jBtExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtExitActionPerformed
-        // TODO add your handling code here:
+      System.exit(0);
     }//GEN-LAST:event_jBtExitActionPerformed
 
     private void jBtSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtSaveActionPerformed
@@ -342,6 +343,17 @@ public class FrmVehicle extends javax.swing.JFrame {
     private void RbtTypeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RbtTypeActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_RbtTypeActionPerformed
+
+    private void jBtDeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtDeleteActionPerformed
+      TxtCodeVehicle.setText("");
+      RbtBrand.setText("");
+      RbtType.setText("");
+      JprPrice.setText("");
+      jRaRed.setText("");
+      TextMile.setText("");
+      TextAmount.setText("");
+      BtnNew.setText("");
+    }//GEN-LAST:event_jBtDeleteActionPerformed
 
     /**
      * @param args the command line arguments
@@ -397,7 +409,6 @@ public class FrmVehicle extends javax.swing.JFrame {
     private javax.swing.ButtonGroup buttonGroup2;
     private javax.swing.ButtonGroup buttonGroup3;
     private javax.swing.ButtonGroup buttonGroup4;
-    private javax.swing.JButton jBtAdd;
     private javax.swing.JButton jBtDelete;
     private javax.swing.JButton jBtExit;
     private javax.swing.JButton jBtSave;
