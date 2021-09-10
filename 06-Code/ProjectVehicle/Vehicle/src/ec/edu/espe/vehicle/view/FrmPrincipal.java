@@ -5,18 +5,36 @@
  */
 package ec.edu.espe.vehicle.view;
 
+import com.mongodb.DB;
+import com.mongodb.DBCollection;
+import com.mongodb.Mongo;
+import java.net.UnknownHostException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+
 /**
  *
  * @author Vanessa Cayambe Team of machine ESPE-DCCO
  */
 public class FrmPrincipal extends javax.swing.JFrame {
-
+DB db;
+DBCollection tabla;
     /**
      * Creates new form FrmPrincipal
      */
     public FrmPrincipal() {
+        try {
+            Mongo mongo = new Mongo("LocalHost",27017);
+            db=mongo.getDB("database");
+            tabla=db.getCollection("tabla");         
+        } catch (UnknownHostException ex) {
+            Logger.getLogger(FrmPrincipal.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
         initComponents();
     }
+
 
     /**
      * This method is called from within the constructor to initialize the form.
