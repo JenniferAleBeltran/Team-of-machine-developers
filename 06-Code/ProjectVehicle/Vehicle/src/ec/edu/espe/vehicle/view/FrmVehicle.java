@@ -62,9 +62,6 @@ public class FrmVehicle extends javax.swing.JFrame {
         TextAmount = new javax.swing.JTextField();
         BtnNew = new javax.swing.JRadioButton();
         BtnUsed = new javax.swing.JRadioButton();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        PnlinputButton = new javax.swing.JPanel();
         jBtAdd = new javax.swing.JButton();
         jBtSave = new javax.swing.JButton();
         jBtDelete = new javax.swing.JButton();
@@ -132,9 +129,23 @@ public class FrmVehicle extends javax.swing.JFrame {
 
         BtnUsed.setText("Used");
 
-        jButton1.setText("Yes");
+        jBtAdd.setText("Add");
 
-        jButton2.setText("No");
+        jBtSave.setText("Save");
+        jBtSave.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtSaveActionPerformed(evt);
+            }
+        });
+
+        jBtDelete.setText("Delete");
+
+        jBtExit.setText("Exit");
+        jBtExit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtExitActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout PnlinputLayout = new javax.swing.GroupLayout(Pnlinput);
         Pnlinput.setLayout(PnlinputLayout);
@@ -159,8 +170,7 @@ public class FrmVehicle extends javax.swing.JFrame {
                                                 .addGap(141, 141, 141)
                                                 .addGroup(PnlinputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                                     .addComponent(jRaGriss)
-                                                    .addComponent(jLabel4)
-                                                    .addComponent(jButton2))))
+                                                    .addComponent(jLabel4))))
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addGroup(PnlinputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addComponent(RbtType2)
@@ -198,9 +208,17 @@ public class FrmVehicle extends javax.swing.JFrame {
                         .addGroup(PnlinputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(TextAmount, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(BtnNew)
-                            .addComponent(BtnUsed)
-                            .addComponent(jButton1))))
-                .addContainerGap(377, Short.MAX_VALUE))
+                            .addComponent(BtnUsed)))
+                    .addGroup(PnlinputLayout.createSequentialGroup()
+                        .addGap(51, 51, 51)
+                        .addComponent(jBtAdd)
+                        .addGap(79, 79, 79)
+                        .addComponent(jBtSave)
+                        .addGap(96, 96, 96)
+                        .addComponent(jBtDelete)
+                        .addGap(79, 79, 79)
+                        .addComponent(jBtExit)))
+                .addContainerGap(307, Short.MAX_VALUE))
         );
         PnlinputLayout.setVerticalGroup(
             PnlinputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -251,56 +269,13 @@ public class FrmVehicle extends javax.swing.JFrame {
                     .addComponent(BtnNew))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(BtnUsed)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 28, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 27, Short.MAX_VALUE)
                 .addGroup(PnlinputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton2))
-                .addGap(22, 22, 22))
-        );
-
-        jBtAdd.setText("Add");
-
-        jBtSave.setText("Save");
-        jBtSave.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBtSaveActionPerformed(evt);
-            }
-        });
-
-        jBtDelete.setText("Delete");
-
-        jBtExit.setText("Exit");
-        jBtExit.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jBtExitActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout PnlinputButtonLayout = new javax.swing.GroupLayout(PnlinputButton);
-        PnlinputButton.setLayout(PnlinputButtonLayout);
-        PnlinputButtonLayout.setHorizontalGroup(
-            PnlinputButtonLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(PnlinputButtonLayout.createSequentialGroup()
-                .addGap(27, 27, 27)
-                .addComponent(jBtAdd)
-                .addGap(142, 142, 142)
-                .addComponent(jBtSave)
-                .addGap(112, 112, 112)
-                .addComponent(jBtDelete)
-                .addGap(129, 129, 129)
-                .addComponent(jBtExit)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        PnlinputButtonLayout.setVerticalGroup(
-            PnlinputButtonLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PnlinputButtonLayout.createSequentialGroup()
-                .addContainerGap(88, Short.MAX_VALUE)
-                .addGroup(PnlinputButtonLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jBtAdd)
                     .addComponent(jBtSave)
                     .addComponent(jBtDelete)
                     .addComponent(jBtExit))
-                .addGap(86, 86, 86))
+                .addGap(23, 23, 23))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -308,55 +283,16 @@ public class FrmVehicle extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(Pnlinput, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(PnlinputButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(0, 77, Short.MAX_VALUE))
+                .addComponent(Pnlinput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(Pnlinput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(PnlinputButton, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addComponent(Pnlinput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void RbtBrandActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RbtBrandActionPerformed
-       Vehicle vehicle; 
-       VehicleController vehicleController; 
-       String CodeVehicle = TxtCodeVehicle.getText();
-       String BrandVehicle  = RbtBrand.getSelectedIcon().toString();
-       String TypeVehicle  = RbtType.getSelectedIcon().toString();
-       String PriceVehicle  = JprPrice.getText();
-       String ColorVehicle = jRaRed.getSelectedIcon().toString();
-       String MileageVehicle = TextMile.getText();
-       String AmountofSale  = TextAmount.getText();
-       String VehicleSold  = BtnNew.getSelectedIcon().toString();
-       
-       ArrayList<Vehicle> vehicles = new ArrayList<>(); 
-       int monthIkew = 3; 
-       
-       //Vehicle vehicle = new vehicle(CodeVehicle,BrandVehicle,TypeVehicle,PriceVehicle,ColorVehicle,MileageVehicle,AmountofSale,VehicleSold);                 
-       
-       //contactController = new ContactController(contact, this); 
-       //contactController.add(contact); 
-       
-       
-       JOptionPane.showMessageDialog(rootPane, "adding + " + TxtCodeVehicle.getName());
-        // TODO add your handling code here:
-    }//GEN-LAST:event_RbtBrandActionPerformed
-
-    private void RbtBrand2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RbtBrand2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_RbtBrand2ActionPerformed
-
-    private void RbtBrand3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RbtBrand3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_RbtBrand3ActionPerformed
 
     private void jBtExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtExitActionPerformed
         // TODO add your handling code here:
@@ -365,6 +301,38 @@ public class FrmVehicle extends javax.swing.JFrame {
     private void jBtSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtSaveActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jBtSaveActionPerformed
+
+    private void RbtBrand3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RbtBrand3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_RbtBrand3ActionPerformed
+
+    private void RbtBrand2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RbtBrand2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_RbtBrand2ActionPerformed
+
+    private void RbtBrandActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RbtBrandActionPerformed
+        Vehicle vehicle;
+        VehicleController vehicleController;
+        String CodeVehicle = TxtCodeVehicle.getText();
+        String BrandVehicle  = RbtBrand.getSelectedIcon().toString();
+        String TypeVehicle  = RbtType.getSelectedIcon().toString();
+        String PriceVehicle  = JprPrice.getText();
+        String ColorVehicle = jRaRed.getSelectedIcon().toString();
+        String MileageVehicle = TextMile.getText();
+        String AmountofSale  = TextAmount.getText();
+        String VehicleSold  = BtnNew.getSelectedIcon().toString();
+
+        ArrayList<Vehicle> vehicles = new ArrayList<>();
+        int monthIkew = 3;
+
+        //Vehicle vehicle = new vehicle(CodeVehicle,BrandVehicle,TypeVehicle,PriceVehicle,ColorVehicle,MileageVehicle,AmountofSale,VehicleSold);
+
+        //contactController = new ContactController(contact, this);
+        //contactController.add(contact);
+
+        JOptionPane.showMessageDialog(rootPane, "adding + " + TxtCodeVehicle.getName());
+        // TODO add your handling code here:
+    }//GEN-LAST:event_RbtBrandActionPerformed
 
     /**
      * @param args the command line arguments
@@ -406,7 +374,6 @@ public class FrmVehicle extends javax.swing.JFrame {
     private javax.swing.JRadioButton BtnUsed;
     private javax.swing.JTextField JprPrice;
     private javax.swing.JPanel Pnlinput;
-    private javax.swing.JPanel PnlinputButton;
     private javax.swing.JRadioButton RbtBrand;
     private javax.swing.JRadioButton RbtBrand1;
     private javax.swing.JRadioButton RbtBrand2;
@@ -425,8 +392,6 @@ public class FrmVehicle extends javax.swing.JFrame {
     private javax.swing.JButton jBtDelete;
     private javax.swing.JButton jBtExit;
     private javax.swing.JButton jBtSave;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLVehicle;
     private javax.swing.JLabel jLaMileAge;
     private javax.swing.JLabel jLaVehicle;
