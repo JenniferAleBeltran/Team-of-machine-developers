@@ -11,10 +11,12 @@ import com.mongodb.DB;
 import com.mongodb.DBCollection;
 import com.mongodb.DBCursor;
 import com.mongodb.DBObject;
+import com.mongodb.Mongo;
 import com.mongodb.MongoClient;
 import java.net.UnknownHostException;
 import java.util.Properties;
 import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 
 /**
@@ -22,13 +24,24 @@ import javax.swing.JOptionPane;
  * @author Vanessa Cayambe Team of machine ESPE-DCCO
  */
 public class Login extends javax.swing.JFrame {
-
+     DB db;
+     DBCollection tabla;
     /**
      * Creates new form FrmClient
      */
     public Login() {
+        try {
+            Mongo mongo = new Mongo("LocalHost", 27017);
+            db = mongo.getDB("database");
+            tabla = db.getCollection("vehicle");
+            
+        } catch (UnknownHostException ex) {
+            Logger.getLogger(Login.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
         initComponents();
         setLocationRelativeTo(null);
+        
     }
 
     /**
@@ -129,35 +142,9 @@ public class Login extends javax.swing.JFrame {
 
     private void btnLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLoginActionPerformed
         // TODO add your handling code here:
-        if (txtIC.getText().equals("")|| txtPassword.getText().equals("")) {
-            JOptionPane.showMessageDialog(null, "Empty fields");
-        } else {
-            try {
-
-                // TODO add your handling code here:
-                MongoClient mongo = new MongoClient("localhost", 27017);
-                DB db = mongo.getDB("registerVehicle");
-                DBCollection col = db.getCollection("users");
-                DBObject query = BasicDBObjectBuilder.start().add("IC", txtIC.getText()).get();
-                DBCursor cursor = col.find(query);
-                while (cursor.hasNext()) {
-                    Gson gson = new Gson();
-                    Properties properties = gson.fromJson(cursor.next().toString(), Properties.class);
-                    System.out.println(properties.get("password"));
-                    if (properties.get("password").equals(txtPassword.getText())) {
-                        JOptionPane.showMessageDialog(null, "Welcome to the Dilership");
-                        FrmVehicle menu = new FrmVehicle();
-                        menu.setVisible(true);
-                        this.dispose();
-
-                    } else {
-                        JOptionPane.showMessageDialog(null, "Error, Incorrect username or password");
-                    }
-                }
-            } catch (UnknownHostException ex) {
-                
-            }
-        }
+        FrmVehicle frmVehicle = new FrmVehicle();
+        frmVehicle.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_btnLoginActionPerformed
 
     /**
