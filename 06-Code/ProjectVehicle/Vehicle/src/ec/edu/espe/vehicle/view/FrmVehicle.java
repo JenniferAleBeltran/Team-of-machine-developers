@@ -62,6 +62,8 @@ public class FrmVehicle extends javax.swing.JFrame {
         TextAmount = new javax.swing.JTextField();
         BtnNew = new javax.swing.JRadioButton();
         BtnUsed = new javax.swing.JRadioButton();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
         PnlinputButton = new javax.swing.JPanel();
         jBtAdd = new javax.swing.JButton();
         jBtSave = new javax.swing.JButton();
@@ -73,7 +75,7 @@ public class FrmVehicle extends javax.swing.JFrame {
         Pnlinput.setBackground(new java.awt.Color(102, 255, 102));
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel1.setText("WELCOME TO THE CAR DEALERSHIP");
+        jLabel1.setText("VEHICLE DEALERSHIP");
 
         jLabel2.setText("Code Vehicle: ");
 
@@ -130,6 +132,10 @@ public class FrmVehicle extends javax.swing.JFrame {
 
         BtnUsed.setText("Used");
 
+        jButton1.setText("Yes");
+
+        jButton2.setText("No");
+
         javax.swing.GroupLayout PnlinputLayout = new javax.swing.GroupLayout(Pnlinput);
         Pnlinput.setLayout(PnlinputLayout);
         PnlinputLayout.setHorizontalGroup(
@@ -153,7 +159,8 @@ public class FrmVehicle extends javax.swing.JFrame {
                                                 .addGap(141, 141, 141)
                                                 .addGroup(PnlinputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                                     .addComponent(jRaGriss)
-                                                    .addComponent(jLabel4))))
+                                                    .addComponent(jLabel4)
+                                                    .addComponent(jButton2))))
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addGroup(PnlinputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addComponent(RbtType2)
@@ -191,7 +198,8 @@ public class FrmVehicle extends javax.swing.JFrame {
                         .addGroup(PnlinputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(TextAmount, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(BtnNew)
-                            .addComponent(BtnUsed))))
+                            .addComponent(BtnUsed)
+                            .addComponent(jButton1))))
                 .addContainerGap(377, Short.MAX_VALUE))
         );
         PnlinputLayout.setVerticalGroup(
@@ -243,7 +251,11 @@ public class FrmVehicle extends javax.swing.JFrame {
                     .addComponent(BtnNew))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(BtnUsed)
-                .addContainerGap(73, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 28, Short.MAX_VALUE)
+                .addGroup(PnlinputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton1)
+                    .addComponent(jButton2))
+                .addGap(22, 22, 22))
         );
 
         jBtAdd.setText("Add");
@@ -299,7 +311,7 @@ public class FrmVehicle extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(Pnlinput, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(PnlinputButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(0, 9, Short.MAX_VALUE))
+                .addGap(0, 77, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -413,6 +425,8 @@ public class FrmVehicle extends javax.swing.JFrame {
     private javax.swing.JButton jBtDelete;
     private javax.swing.JButton jBtExit;
     private javax.swing.JButton jBtSave;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLVehicle;
     private javax.swing.JLabel jLaMileAge;
     private javax.swing.JLabel jLaVehicle;
