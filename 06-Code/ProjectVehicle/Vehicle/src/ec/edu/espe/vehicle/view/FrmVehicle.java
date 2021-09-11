@@ -54,7 +54,7 @@ public class FrmVehicle extends javax.swing.JFrame {
         RbtType = new javax.swing.JRadioButton();
         RbtType1 = new javax.swing.JRadioButton();
         RbtType2 = new javax.swing.JRadioButton();
-        JprPrice = new javax.swing.JTextField();
+        txtPrice = new javax.swing.JTextField();
         jRaRed = new javax.swing.JRadioButton();
         jRaBlue = new javax.swing.JRadioButton();
         jRaGriss = new javax.swing.JRadioButton();
@@ -68,10 +68,11 @@ public class FrmVehicle extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        Pnlinput.setBackground(new java.awt.Color(102, 255, 102));
+        Pnlinput.setBackground(new java.awt.Color(204, 255, 204));
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel1.setText("VEHICLE DEALERSHIP");
+        jLabel1.setFont(new java.awt.Font("Algerian", 3, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(102, 0, 0));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/vehicle/view/Dealership2.png"))); // NOI18N
 
         jLabel2.setText("Code Vehicle: ");
 
@@ -159,7 +160,7 @@ public class FrmVehicle extends javax.swing.JFrame {
         PnlinputLayout.setHorizontalGroup(
             PnlinputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(PnlinputLayout.createSequentialGroup()
-                .addGroup(PnlinputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(PnlinputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(PnlinputLayout.createSequentialGroup()
                         .addGap(28, 28, 28)
                         .addGroup(PnlinputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -192,7 +193,7 @@ public class FrmVehicle extends javax.swing.JFrame {
                             .addGroup(PnlinputLayout.createSequentialGroup()
                                 .addComponent(jLabel5)
                                 .addGap(18, 18, 18)
-                                .addComponent(JprPrice, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(txtPrice, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(PnlinputLayout.createSequentialGroup()
                                 .addComponent(jLabel2)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -222,16 +223,15 @@ public class FrmVehicle extends javax.swing.JFrame {
                             .addComponent(BtnNew)
                             .addComponent(BtnUsed)))
                     .addGroup(PnlinputLayout.createSequentialGroup()
-                        .addGap(138, 138, 138)
-                        .addComponent(jLabel1)))
+                        .addContainerGap()
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)))
                 .addContainerGap(44, Short.MAX_VALUE))
         );
         PnlinputLayout.setVerticalGroup(
             PnlinputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(PnlinputLayout.createSequentialGroup()
-                .addContainerGap()
                 .addComponent(jLabel1)
-                .addGap(18, 18, 18)
+                .addGap(29, 29, 29)
                 .addGroup(PnlinputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jLabel2)
                     .addComponent(TxtCodeVehicle, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -254,7 +254,7 @@ public class FrmVehicle extends javax.swing.JFrame {
                 .addGap(13, 13, 13)
                 .addGroup(PnlinputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
-                    .addComponent(JprPrice, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtPrice, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(19, 19, 19)
                 .addGroup(PnlinputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLaVehicle)
@@ -275,7 +275,7 @@ public class FrmVehicle extends javax.swing.JFrame {
                     .addComponent(BtnNew))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(BtnUsed)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 27, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(PnlinputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jBtSave)
                     .addComponent(jBtDelete)
@@ -306,6 +306,7 @@ public class FrmVehicle extends javax.swing.JFrame {
 
     private void jBtSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtSaveActionPerformed
         // TODO add your handling code here:
+        
     }//GEN-LAST:event_jBtSaveActionPerformed
 
     private void RbtBrand3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RbtBrand3ActionPerformed
@@ -322,7 +323,7 @@ public class FrmVehicle extends javax.swing.JFrame {
         String CodeVehicle = TxtCodeVehicle.getText();
         String BrandVehicle  = RbtBrand.getSelectedIcon().toString();
         String TypeVehicle  = RbtType.getSelectedIcon().toString();
-        String PriceVehicle  = JprPrice.getText();
+        String PriceVehicle  = txtPrice.getText();
         String ColorVehicle = jRaRed.getSelectedIcon().toString();
         String MileageVehicle = TextMile.getText();
         String AmountofSale  = TextAmount.getText();
@@ -348,7 +349,7 @@ public class FrmVehicle extends javax.swing.JFrame {
       TxtCodeVehicle.setText("");
       RbtBrand.setText("");
       RbtType.setText("");
-      JprPrice.setText("");
+      txtPrice.setText("");
       jRaRed.setText("");
       TextMile.setText("");
       TextAmount.setText("");
@@ -393,7 +394,6 @@ public class FrmVehicle extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JRadioButton BtnNew;
     private javax.swing.JRadioButton BtnUsed;
-    private javax.swing.JTextField JprPrice;
     private javax.swing.JPanel Pnlinput;
     private javax.swing.JRadioButton RbtBrand;
     private javax.swing.JRadioButton RbtBrand1;
@@ -424,5 +424,6 @@ public class FrmVehicle extends javax.swing.JFrame {
     private javax.swing.JRadioButton jRaBlue;
     private javax.swing.JRadioButton jRaGriss;
     private javax.swing.JRadioButton jRaRed;
+    private javax.swing.JTextField txtPrice;
     // End of variables declaration//GEN-END:variables
 }

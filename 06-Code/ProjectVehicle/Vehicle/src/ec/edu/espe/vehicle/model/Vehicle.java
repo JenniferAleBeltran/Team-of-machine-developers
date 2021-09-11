@@ -29,6 +29,8 @@ public class Vehicle {
         this.mileage = mileage;
     }
 
+    
+
     @Override
     public String toString() {
         return "Vehicle{" + "code=" + code + ", brand=" + brand + ", type=" + type + ", price=" + price + ", ColorVehicle=" + ColorVehicle + ", mileage=" + mileage + ", accessory=" + accessory + '}';
