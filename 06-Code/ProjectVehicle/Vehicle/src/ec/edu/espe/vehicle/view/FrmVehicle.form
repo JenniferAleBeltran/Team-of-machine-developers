@@ -2,13 +2,13 @@
 
 <Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
   <NonVisualComponents>
-    <Component class="javax.swing.ButtonGroup" name="buttonGroup1">
+    <Component class="javax.swing.ButtonGroup" name="GroupBrand">
     </Component>
-    <Component class="javax.swing.ButtonGroup" name="buttonGroup2">
+    <Component class="javax.swing.ButtonGroup" name="GroupType">
     </Component>
-    <Component class="javax.swing.ButtonGroup" name="buttonGroup3">
+    <Component class="javax.swing.ButtonGroup" name="GroupColor">
     </Component>
-    <Component class="javax.swing.ButtonGroup" name="buttonGroup4">
+    <Component class="javax.swing.ButtonGroup" name="GroupSold">
     </Component>
   </NonVisualComponents>
   <Properties>
@@ -168,9 +168,9 @@
                       <Component id="RbtType" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="RbtType1" min="-2" max="-2" attributes="0"/>
-                      <Component id="RbtBrand1" min="-2" pref="23" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="RbtType1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="RbtBrand1" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
@@ -277,6 +277,9 @@
         </Component>
         <Component class="javax.swing.JRadioButton" name="RbtBrand">
           <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="GroupBrand"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Chevrolet"/>
           </Properties>
           <Events>
@@ -285,11 +288,17 @@
         </Component>
         <Component class="javax.swing.JRadioButton" name="RbtBrand1">
           <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="GroupBrand"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Toyota"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JRadioButton" name="RbtBrand2">
           <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="GroupBrand"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Kia"/>
           </Properties>
           <Events>
@@ -298,6 +307,9 @@
         </Component>
         <Component class="javax.swing.JRadioButton" name="RbtBrand3">
           <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="GroupBrand"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Hyundai"/>
           </Properties>
           <Events>
@@ -306,6 +318,9 @@
         </Component>
         <Component class="javax.swing.JRadioButton" name="RbtType">
           <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="GroupType"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Vehicle"/>
           </Properties>
           <Events>
@@ -314,11 +329,17 @@
         </Component>
         <Component class="javax.swing.JRadioButton" name="RbtType1">
           <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="GroupType"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Truck"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JRadioButton" name="RbtType2">
           <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="GroupType"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Motorcycle"/>
           </Properties>
         </Component>
@@ -326,16 +347,25 @@
         </Component>
         <Component class="javax.swing.JRadioButton" name="jRaRed">
           <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="GroupColor"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Red"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JRadioButton" name="jRaBlue">
           <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="GroupColor"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Blue"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JRadioButton" name="jRaGriss">
           <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="GroupColor"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Griss"/>
           </Properties>
         </Component>
@@ -345,11 +375,17 @@
         </Component>
         <Component class="javax.swing.JRadioButton" name="BtnNew">
           <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="GroupSold"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="New"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JRadioButton" name="BtnUsed">
           <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="GroupSold"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Used"/>
           </Properties>
         </Component>

@@ -32,10 +32,10 @@ public class FrmVehicle extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        buttonGroup1 = new javax.swing.ButtonGroup();
-        buttonGroup2 = new javax.swing.ButtonGroup();
-        buttonGroup3 = new javax.swing.ButtonGroup();
-        buttonGroup4 = new javax.swing.ButtonGroup();
+        GroupBrand = new javax.swing.ButtonGroup();
+        GroupType = new javax.swing.ButtonGroup();
+        GroupColor = new javax.swing.ButtonGroup();
+        GroupSold = new javax.swing.ButtonGroup();
         Pnlinput = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -90,6 +90,7 @@ public class FrmVehicle extends javax.swing.JFrame {
 
         jLVehicle.setText("Vehicle Sold: ");
 
+        GroupBrand.add(RbtBrand);
         RbtBrand.setText("Chevrolet");
         RbtBrand.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -97,8 +98,10 @@ public class FrmVehicle extends javax.swing.JFrame {
             }
         });
 
+        GroupBrand.add(RbtBrand1);
         RbtBrand1.setText("Toyota");
 
+        GroupBrand.add(RbtBrand2);
         RbtBrand2.setText("Kia");
         RbtBrand2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -106,6 +109,7 @@ public class FrmVehicle extends javax.swing.JFrame {
             }
         });
 
+        GroupBrand.add(RbtBrand3);
         RbtBrand3.setText("Hyundai");
         RbtBrand3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -113,6 +117,7 @@ public class FrmVehicle extends javax.swing.JFrame {
             }
         });
 
+        GroupType.add(RbtType);
         RbtType.setText("Vehicle");
         RbtType.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -120,18 +125,25 @@ public class FrmVehicle extends javax.swing.JFrame {
             }
         });
 
+        GroupType.add(RbtType1);
         RbtType1.setText("Truck");
 
+        GroupType.add(RbtType2);
         RbtType2.setText("Motorcycle");
 
+        GroupColor.add(jRaRed);
         jRaRed.setText("Red");
 
+        GroupColor.add(jRaBlue);
         jRaBlue.setText("Blue");
 
+        GroupColor.add(jRaGriss);
         jRaGriss.setText("Griss");
 
+        GroupSold.add(BtnNew);
         BtnNew.setText("New");
 
+        GroupSold.add(BtnUsed);
         BtnUsed.setText("Used");
 
         jBtSave.setText("Save");
@@ -242,7 +254,7 @@ public class FrmVehicle extends javax.swing.JFrame {
                     .addComponent(jLabel4)
                     .addComponent(RbtType))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(PnlinputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(PnlinputLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(RbtType1)
                     .addComponent(RbtBrand1, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -347,13 +359,14 @@ public class FrmVehicle extends javax.swing.JFrame {
 
     private void jBtDeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtDeleteActionPerformed
       TxtCodeVehicle.setText("");
-      RbtBrand.setText("");
-      RbtType.setText("");
       txtPrice.setText("");
-      jRaRed.setText("");
       TextMile.setText("");
       TextAmount.setText("");
-      BtnNew.setText("");
+      
+      GroupBrand.clearSelection();
+      GroupType.clearSelection();
+      GroupColor.clearSelection();
+      GroupSold.clearSelection();
     }//GEN-LAST:event_jBtDeleteActionPerformed
 
     /**
@@ -394,6 +407,10 @@ public class FrmVehicle extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JRadioButton BtnNew;
     private javax.swing.JRadioButton BtnUsed;
+    private javax.swing.ButtonGroup GroupBrand;
+    private javax.swing.ButtonGroup GroupColor;
+    private javax.swing.ButtonGroup GroupSold;
+    private javax.swing.ButtonGroup GroupType;
     private javax.swing.JPanel Pnlinput;
     private javax.swing.JRadioButton RbtBrand;
     private javax.swing.JRadioButton RbtBrand1;
@@ -405,10 +422,6 @@ public class FrmVehicle extends javax.swing.JFrame {
     private javax.swing.JTextField TextAmount;
     private javax.swing.JTextField TextMile;
     private javax.swing.JTextField TxtCodeVehicle;
-    private javax.swing.ButtonGroup buttonGroup1;
-    private javax.swing.ButtonGroup buttonGroup2;
-    private javax.swing.ButtonGroup buttonGroup3;
-    private javax.swing.ButtonGroup buttonGroup4;
     private javax.swing.JButton jBtDelete;
     private javax.swing.JButton jBtExit;
     private javax.swing.JButton jBtSave;
